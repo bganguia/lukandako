@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LukaNdako | Excellence Immobilière</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- Navigation Premium -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 1rem;">
+                    <div class="logo-icon">
+                        <i class="fas fa-building-columns"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>LukaNdako</h1>
+                        <p class="logo-subtitle">L'excellence immobilière</p>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="nav-actions">
+                <div class="user-menu">
+                    <div class="user-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="user-info">
+                        <span class="user-name">Mon Espace</span>
+                        <span class="user-role">Client Privilège</span>
+                    </div>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h2 class="hero-title">Trouvez votre lieu <span class="highlight">d'exception</span></h2>
+            <p class="hero-subtitle">Découvrez des propriétés uniques sélectionnées avec soin</p>
+            
+            <!-- Recherche Avancée -->
+            <div class="search-panel">
+                <div class="search-tabs">
+                    <button class="search-tab active" data-type="louer">
+                        <i class="fas fa-key"></i> À louer
+                    </button>
+                    <button class="search-tab" data-type="vendre">
+                        <i class="fas fa-tag"></i> À vendre
+                    </button>
+                </div>
+                
+                <div class="search-main">
+                    <div class="search-field search-field-large">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="searchInput" placeholder="Recherchez par ville, quartier ou mot-clé...">
+                    </div>
+                    <button class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                
+                <div class="search-filters">
+                    <div class="filter-row">
+                        <div class="filter-group">
+                            <label class="filter-label">
+                                <i class="fas fa-city"></i> Ville
+                            </label>
+                            <div class="custom-select">
+                                <select id="villeFilter">
+                                    <option value="">Toutes les villes</option>
+                                </select>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="filter-group">
+                            <label class="filter-label">
+                                <i class="fas fa-map-marker-alt"></i> Quartier
+                            </label>
+                            <div class="custom-select">
+                                <select id="quartierFilter">
+                                    <option value="">Tous les quartiers</option>
+                                </select>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="filter-group">
+                            <label class="filter-label">
+                                <i class="fas fa-home"></i> Type
+                            </label>
+                            <div class="custom-select">
+                                <select id="typeFilter">
+                                    <option value="">Tous les types</option>
+                                </select>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-row">
+                        <div class="filter-group">
+                            <label class="filter-label">
+                                <i class="fas fa-bed"></i> Chambres
+                            </label>
+                            <div class="custom-select">
+                                <select id="chambresFilter">
+                                    <option value="0">Toutes</option>
+                                    <option value="1">1+</option>
+                                    <option value="2">2+</option>
+                                    <option value="3">3+</option>
+                                    <option value="4">4+</option>
+                                </select>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="filter-group">
+                            <label class="filter-label">
+                                <i class="fas fa-expand-arrows-alt"></i> Surface min
+                            </label>
+                            <input type="number" id="surfaceMin" placeholder="0 m²" class="surface-input">
+                        </div>
+                        
+                        <div class="filter-group">
+                            <label class="filter-label">
+                                <i class="fas fa-dollar-sign"></i> Budget max
+                            </label>
+                            <div class="price-input-group">
+                                <input type="number" id="prixMax" placeholder="Illimité" class="price-input">
+                                <span class="price-unit">$</span>
+                            </div>
+                        </div>
+                        
+                        <div class="filter-group">
+                            <label class="filter-label">
+                                <i class="fas fa-sliders-h"></i> Plus de filtres
+                            </label>
+                            <button class="more-filters-btn">
+                                <i class="fas fa-plus-circle"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" id="totalAnnonces">0</span>
+                    <span class="stat-label">Propriétés</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24h</span>
+                    <span class="stat-label">Mise à jour</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Vérifiées</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contenu Principal -->
+    <main class="main-content">
+        <div class="container">
+            <!-- En-tête Section -->
+            <div class="section-header">
+                <div class="header-left">
+                    <h2 class="section-title">Nos <span class="accent">Sélections</span></h2>
+                    <p class="section-subtitle">Des propriétés exceptionnelles pour des clients exigeants</p>
+                </div>
+                
+                <div class="header-right">
+                    <div class="sort-options">
+                        <span class="sort-label">Trier par :</span>
+                        <div class="custom-select small">
+                            <select id="sortSelect">
+                                <option value="date_desc">Plus récentes</option>
+                                <option value="prix_asc">Prix croissant</option>
+                                <option value="prix_desc">Prix décroissant</option>
+                                <option value="surface_desc">Surface décroissante</option>
+                            </select>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    
+                    <button id="resetFilters" class="reset-btn">
+                        <i class="fas fa-redo"></i> Réinitialiser
+                    </button>
+                </div>
+            </div>
+
+            <!-- Grille des Annonces -->
+            <div class="annonces-grid" id="annoncesContainer">
+                <!-- Les annonces seront chargées ici dynamiquement -->
+                <div class="loading-state">
+                    <div class="spinner">
+                        <i class="fas fa-circle-notch fa-spin"></i>
+                    </div>
+                    <p>Chargement des propriétés...</p>
+                </div>
+            </div>
+
+            <!-- Aucun Résultat -->
+            <div class="no-results" id="noResults" style="display: none;">
+                <div class="no-results-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <h3>Aucune propriété trouvée</h3>
+                <p>Essayez d'élargir vos critères de recherche ou contactez nos conseillers</p>
+                <button class="contact-btn">
+                    <i class="fas fa-phone-alt"></i> Contactez un expert
+                </button>
+            </div>
+
+            <!-- Featured Properties -->
+            <div class="featured-section">
+                <h2 class="section-title">Nos <span class="accent">Coups de Cœur</span></h2>
+                <div class="featured-grid">
+                    <div class="featured-card">
+                        <div class="featured-badge">
+                            <i class="fas fa-crown"></i> Premium
+                        </div>
+                        <div class="featured-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <i class="fas fa-water"></i>
+                        </div>
+                        <div class="featured-content">
+                            <h3>Villa Panoramique Lac</h3>
+                            <p class="featured-location">Bacongo, Brazzaville</p>
+                            <div class="featured-price">3,500,000 F CFA</div>
+                            <button class="view-btn" data-id="2">Voir détails</button>
+                        </div>
+                    </div>
+                    
+                    <div class="featured-card">
+                        <div class="featured-badge">
+                            <i class="fas fa-star"></i> Exclusive
+                        </div>
+                        <div class="featured-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            <i class="fas fa-city"></i>
+                        </div>
+                        <div class="featured-content">
+                            <h3>Penthouse Gombe</h3>
+                            <p class="featured-location">Brazzaville, Brazzaville</p>
+                            <div class="featured-price">80,500 F CFA/mois</div>
+                            <button class="view-btn" data-id="1">Voir détails</button>
+                        </div>
+                    </div>
+                    
+                    <div class="featured-card">
+                        <div class="featured-badge">
+                            <i class="fas fa-gem"></i> Luxury
+                        </div>
+                        <div class="featured-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            <i class="fas fa-tree"></i>
+                        </div>
+                        <div class="featured-content">
+                            <h3>Domaine Forestier</h3>
+                            <p class="featured-location">Tié-Tié, Pointe-Noire</p>
+                            <div class="featured-price">4,200,000 F CFA</div>
+                            <button class="view-btn" data-id="9">Voir détails</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Premium -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-column">
+                        <div class="footer-logo">
+                            <i class="fas fa-building-columns"></i>
+                            <div>
+                                <h3>LukaNdako</h3>
+                                <p>Excellence Immobilière</p>
+                            </div>
+                        </div>
+                        <p class="footer-description">
+                            Nous transformons la recherche immobilière en une expérience d'exception, 
+                            alliant technologie de pointe et expertise humaine.
+                        </p>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Nos Services</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Achat Premium</a></li>
+                            <li><a href="#">Location Exclusive</a></li>
+                            <li><a href="#">Gestion Patrimoine</a></li>
+                            <li><a href="#">Conseil en Investissement</a></li>
+                            <li><a href="#">Évaluation Gratuite</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Entreprise</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">À propos</a></li>
+                            <li><a href="#">Notre Équipe</a></li>
+                            <li><a href="#">Carrières</a></li>
+                            <li><a href="#">Presse</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Contact</h4>
+                        <div class="contact-info">
+                            <p><i class="fas fa-map-marker-alt"></i> Gombe, Kinshasa</p>
+                            <p><i class="fas fa-phone"></i> +243 81 234 5678</p>
+                            <p><i class="fas fa-envelope"></i> contact@lukan.com</p>
+                        </div>
+                        <button class="newsletter-btn">
+                            <i class="fas fa-paper-plane"></i> S'inscrire à la newsletter
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2024 LukaNdako. Tous droits réservés. | <a href="#">Confidentialité</a> | <a href="#">Conditions</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

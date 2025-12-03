@@ -1,0 +1,394 @@
+{
+  "annonces": [
+    {
+      "id": 1,
+      "titre": "Appartement moderne avec vue sur la ville",
+      "description": "Magnifique appartement entièrement rénové, situé au cœur de Gombe. Proche de tous les services. Cet appartement de standing offre une vue panoramique exceptionnelle sur la ville. Il comprend une grande pièce de vie lumineuse, une cuisine américaine entièrement équipée avec électroménagers haut de gamme, trois chambres spacieuses dont une suite parentale avec dressing, et deux salles de bain modernes. La résidence propose des services exclusifs : conciergerie 24h/24, salle de sport, piscine et spa. Parquet en chêne massif, climatisation réversible dans toutes les pièces, domotique complète. Double vitrage phonique, accès internet fibre optique. Place de parking souterraine et box à vélos inclus.",
+      "ville": "Kinshasa",
+      "quartier": "Gombe",
+      "type": "Appartement",
+      "chambres": 3,
+      "prix": 120000,
+      "surface": 120,
+      "statut": "louer",
+      "photos": [
+        "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      ],
+      "date_publication": "2024-01-15",
+      "salles_bain": 2,
+      "etage": 5,
+      "parking": 1,
+      "annee_construction": 2018,
+      "equipements": [
+        "Cuisine équipée",
+        "Climatisation réversible",
+        "Ascenseur",
+        "Piscine",
+        "Salle de sport",
+        "Conciergerie 24h/24",
+        "Domotique complète",
+        "Double vitrage phonique",
+        "Internet fibre optique"
+      ],
+      "proximites": [
+        "Centre commercial à 200m",
+        "Station de métro à 300m",
+        "École internationale à 500m",
+        "Parc urbain à 400m",
+        "Restaurants gastronomiques à 150m"
+      ]
+    },
+    {
+      "id": 2,
+      "titre": "Villa de luxe avec piscine et jardin",
+      "description": "Superbe villa contemporaine avec piscine à débordement et jardin paysagé. Cette propriété d'exception allie élégance et modernité. Elle comprend un grand salon double hauteur avec cheminée, salle à manger, cuisine professionnelle équipée Miele, bureau, 5 chambres dont une suite parentale avec salle de bain en marbre et dressing walk-in. Extérieurs comprenant une piscine chauffée, pool house avec kitchenette, jardin arboré avec système d'arrosage automatique, et parking pour 3 voitures. Sécurité haut de gamme avec alarme, vidéosurveillance et portail électrique. Système domotique pour l'éclairage, les volets et la climatisation.",
+      "ville": "Kinshasa",
+      "quartier": "Binza",
+      "type": "Villa",
+      "chambres": 5,
+      "prix": 2500000,
+      "surface": 350,
+      "statut": "vendre",
+      "photos": [
+        "https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1518780664697-55e3ad937233?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      ],
+      "date_publication": "2024-01-14",
+      "salles_bain": 4,
+      "parking": 3,
+      "annee_construction": 2020,
+      "equipements": [
+        "Piscine chauffée",
+        "Jardin paysagé",
+        "Système de sécurité avancé",
+        "Domotique complète",
+        "Climatisation centrale",
+        "Cuisine professionnelle",
+        "Cheminée",
+        "Système d'arrosage automatique"
+      ],
+      "proximites": [
+        "Golf à 2km",
+        "Centre équestre à 3km",
+        "Écoles internationales à 1km",
+        "Centre commercial à 800m",
+        "Hôpital privé à 1.5km"
+      ]
+    },
+    {
+      "id": 3,
+      "titre": "Studio meublé étudiant centre-ville",
+      "description": "Studio entièrement meublé et équipé, idéal pour étudiant ou jeune professionnel. Situé à proximité immédiate de l'Université de Kinshasa et des transports en commun. Le studio comprend un espace de vie avec coin cuisine équipé (réfrigérateur, plaques de cuisson, micro-ondes), une salle de bain moderne avec douche à l'italienne, et un grand dressing. Immeuble sécurisé avec digicode et interphone. Charges comprises : eau, électricité, internet haut débit. Possibilité de location à l'année ou au semestre.",
+      "ville": "Kinshasa",
+      "quartier": "Lemba",
+      "type": "Studio",
+      "chambres": 1,
+      "prix": 45000,
+      "surface": 35,
+      "statut": "louer",
+      "photos": [
+        "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      ],
+      "date_publication": "2024-01-13",
+      "salles_bain": 1,
+      "etage": 2,
+      "equipements": [
+        "Meublé",
+        "Internet inclus",
+        "Cuisine équipée",
+        "Eau chaude",
+        "Électricité incluse",
+        "Dressing",
+        "Sécurité digicode"
+      ],
+      "proximites": [
+        "Université à 100m",
+        "Bibliothèque à 300m",
+        "Restaurants universitaires à 200m",
+        "Transport en commun à 50m",
+        "Superette à 150m"
+      ]
+    },
+    {
+      "id": 4,
+      "titre": "Maison familiale avec grand jardin",
+      "description": "Charmante maison familiale parfaitement entretenue, idéale pour une famille. Elle comprend un séjour lumineux avec cheminée, salle à manger, cuisine équipée, 4 chambres dont une suite parentale, 2 salles de bain, un bureau et une buanderie. Extérieurs comprenant un grand jardin arboré avec arbres fruitiers, terrasse couverte, garage pour 2 voitures et abri de jardin. Maison rénovée en 2022 avec isolation thermique et acoustique, fenêtres double vitrage, chauffage au sol au rez-de-chaussée. Quartier calme et résidentiel.",
+      "ville": "Lubumbashi",
+      "quartier": "Kenya",
+      "type": "Maison",
+      "chambres": 4,
+      "prix": 1800000,
+      "surface": 200,
+      "statut": "vendre",
+      "photos": [
+        "https://images.unsplash.com/photo-1513584684374-8bab748fbf90?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      ],
+      "date_publication": "2024-01-12",
+      "salles_bain": 2,
+      "parking": 2,
+      "annee_construction": 1995,
+      "equipements": [
+        "Jardin arboré",
+        "Garage double",
+        "Cheminée",
+        "Chauffage au sol",
+        "Double vitrage",
+        "Isolation thermique",
+        "Terrasse couverte",
+        "Buanderie",
+        "Abri de jardin"
+      ],
+      "proximites": [
+        "École primaire à 400m",
+        "Collège à 800m",
+        "Parc à 300m",
+        "Supermarché à 500m",
+        "Centre médical à 700m"
+      ]
+    },
+    {
+      "id": 5,
+      "titre": "Appartement neuf haut standing résidence sécurisée",
+      "description": "Appartement neuf dans résidence récente avec services haut de gamme. Situé au dernier étage avec terrasse privative et vue dégagée. L'appartement comprend un grand séjour ouvrant sur la terrasse, cuisine ouverte équipée Siemens, 3 chambres avec placards intégrés, 2 salles de bain dont une en suite, et un cellier. Résidence avec piscine, salle de sport, spa, conciergerie 24h/24 et sécurité renforcée. Deux places de parking souterraines et un box à vélos inclus. Livraison clés en main.",
+      "ville": "Kinshasa",
+      "quartier": "Limete",
+      "type": "Appartement",
+      "chambres": 3,
+      "prix": 150000,
+      "surface": 110,
+      "statut": "louer",
+      "photos": [
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      ],
+      "date_publication": "2024-01-11",
+      "salles_bain": 2,
+      "etage": 6,
+      "parking": 2,
+      "annee_construction": 2023,
+      "equipements": [
+        "Terrasse privative",
+        "Piscine",
+        "Salle de sport",
+        "Spa",
+        "Conciergerie 24h/24",
+        "Cuisine équipée Siemens",
+        "Climatisation réversible",
+        "Volets roulants électriques",
+        "Domotique"
+      ],
+      "proximites": [
+        "Centre d'affaires à 300m",
+        "Restaurants à 200m",
+        "Cinéma à 500m",
+        "Transport en commun à 100m",
+        "Boutiques de luxe à 400m"
+      ]
+    },
+    {
+      "id": 6,
+      "titre": "Chambre meublée en colocation étudiante",
+      "description": "Chambre dans appartement partagé avec 2 autres étudiants. L'appartement comprend un salon commun avec TV et canapé, cuisine équipée (four, micro-ondes, lave-vaisselle, lave-linge), salle de bain partagée et WC séparé. Chambre de 18m² avec lit 140x200, bureau, armoire et étagères. Charges comprises : eau, électricité, internet fibre. Immeuble avec ascenseur et gardien. Quartier vivant avec nombreux commerces et cafés.",
+      "ville": "Kinshasa",
+      "quartier": "Bandál",
+      "type": "Chambre",
+      "chambres": 1,
+      "prix": 25000,
+      "surface": 18,
+      "statut": "louer",
+      "photos": [
+        "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      ],
+      "date_publication": "2024-01-10",
+      "equipements": [
+        "Meublé",
+        "Internet fibre inclus",
+        "Lave-linge",
+        "Lave-vaisselle",
+        "Ascenseur",
+        "Gardien",
+        "Charges comprises"
+      ],
+      "proximites": [
+        "Universités à 800m",
+        "Bibliothèques à 600m",
+        "Cafés étudiant à 200m",
+        "Supermarché à 300m",
+        "Parc à 400m"
+      ]
+    },
+    {
+      "id": 7,
+      "titre": "Duplex avec terrasse panoramique vue sur Lubumbashi",
+      "description": "Exceptionnel duplex avec terrasse de 50m² offrant une vue imprenable sur la ville. Au premier niveau : grand séjour double hauteur avec cheminée, cuisine ouverte équipée haut de gamme, bureau, WC invité. Au second niveau : 4 chambres dont une suite parentale avec dressing et salle de bain en marbre, 2 autres salles de bain. Terrasse équipée d'un coin repas, d'un coin détente et d'un système d'irrigation pour les plantes. Appartement entièrement rénové en 2023 avec matériaux de qualité.",
+      "ville": "Lubumbashi",
+      "quartier": "Commune",
+      "type": "Duplex",
+      "chambres": 4,
+      "prix": 2200000,
+      "surface": 180,
+      "statut": "vendre",
+      "photos": [
+        "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      ],
+      "date_publication": "2024-01-09",
+      "salles_bain": 3,
+      "etage": 8,
+      "parking": 2,
+      "annee_construction": 2015,
+      "equipements": [
+        "Terrasse panoramique",
+        "Cheminée",
+        "Cuisine haut de gamme",
+        "Salles de bain en marbre",
+        "Climatisation centrale",
+        "Volets roulants électriques",
+        "Système d'irrigation",
+        "Double vitrage"
+      ],
+      "proximites": [
+        "Centre-ville à 500m",
+        "Centre commercial à 300m",
+        "Restaurants gastronomiques à 200m",
+        "Théâtre à 400m",
+        "Musée à 600m"
+      ]
+    },
+    {
+      "id": 8,
+      "titre": "Appartement F2 rénové centre-ville Matadi",
+      "description": "Appartement F2 lumineux entièrement rénové, situé en centre-ville de Matadi. Idéal pour jeune couple ou investisseur. L'appartement comprend un séjour/cuisine ouverte entièrement équipée, 2 chambres avec placards, une salle de bain moderne avec douche à l'italienne et WC séparé. Parquet flottant dans toutes les pièces, peinture neuve, électricité aux normes. Immeuble avec ascenseur et hall d'entrée rénové. Excellente exposition sud, très lumineux.",
+      "ville": "Matadi",
+      "quartier": "Nzadi",
+      "type": "Appartement",
+      "chambres": 2,
+      "prix": 75000,
+      "surface": 65,
+      "statut": "louer",
+      "photos": [
+        "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      ],
+      "date_publication": "2024-01-08",
+      "salles_bain": 1,
+      "etage": 3,
+      "annee_construction": 1985,
+      "equipements": [
+        "Entièrement rénové",
+        "Cuisine équipée",
+        "Parquet flottant",
+        "Ascenseur",
+        "Électricité aux normes",
+        "Double vitrage",
+        "Exposition sud"
+      ],
+      "proximites": [
+        "Centre-ville à 100m",
+        "Marché central à 300m",
+        "Transport en commun à 50m",
+        "Commerces à 200m",
+        "Banques à 150m"
+      ]
+    },
+    {
+      "id": 9,
+      "titre": "Villa de prestige avec dépendance et piscine",
+      "description": "Villa exceptionnelle avec maison d'amis indépendante, située dans un quartier résidentiel huppé. La villa principale comprend : grand hall d'entrée, séjour double hauteur avec cheminée, salle à manger, cuisine professionnelle, bureau, 6 chambres dont 2 suites, 4 salles de bain, salon TV, salle de cinéma et cave à vin. Dépendance de 80m² avec salon, cuisine, chambre et salle de bain. Extérieurs : piscine chauffée, pool house, jardin paysagé de 2000m², terrain de pétanque, parking pour 5 voitures. Sécurité maximale.",
+      "ville": "Kinshasa",
+      "quartier": "Ngaliema",
+      "type": "Villa",
+      "chambres": 6,
+      "prix": 3200000,
+      "surface": 450,
+      "statut": "vendre",
+      "photos": [
+        "https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      ],
+      "date_publication": "2024-01-07",
+      "salles_bain": 4,
+      "parking": 5,
+      "annee_construction": 2018,
+      "equipements": [
+        "Piscine chauffée",
+        "Dépendance indépendante",
+        "Salle de cinéma",
+        "Cave à vin",
+        "Cuisine professionnelle",
+        "Sécurité maximale",
+        "Jardin paysagé 2000m²",
+        "Pool house",
+        "Terrain de pétanque",
+        "Domotique complète"
+      ],
+      "proximites": [
+        "Golf à 1km",
+        "Club privé à 800m",
+        "Écoles internationales à 2km",
+        "Centre commercial de luxe à 3km",
+        "Hôpital privé à 2.5km"
+      ]
+    },
+    {
+      "id": 10,
+      "titre": "Studio équipé centre-ville Kasa-Vubu",
+      "description": "Studio entièrement équipé et meublé, situé au cœur du quartier animé de Kasa-Vubu. Idéal pour jeune professionnel. Le studio comprend : espace de vie avec canapé-lit, table à manger, coin cuisine équipée (réfrigérateur, plaques induction, micro-ondes), salle de bain moderne avec douche, WC séparé. Mezzanine avec lit 140x200. Climatisation réversible, internet fibre inclus. Immeuble récent avec ascenseur et gardien 24h/24. Proche de tous commerces et transports.",
+      "ville": "Kinshasa",
+      "quartier": "Kasa-Vubu",
+      "type": "Studio",
+      "chambres": 1,
+      "prix": 40000,
+      "surface": 30,
+      "statut": "louer",
+      "photos": [
+        "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      ],
+      "date_publication": "2024-01-06",
+      "salles_bain": 1,
+      "etage": 4,
+      "annee_construction": 2020,
+      "equipements": [
+        "Meublé et équipé",
+        "Internet fibre inclus",
+        "Climatisation réversible",
+        "Ascenseur",
+        "Gardien 24h/24",
+        "Mezzanine",
+        "Cuisine équipée"
+      ],
+      "proximites": [
+        "Centre-ville à 100m",
+        "Commerces à 50m",
+        "Transport en commun à 30m",
+        "Restaurants à 80m",
+        "Cinéma à 200m"
+      ]
+    }
+  ]
+}

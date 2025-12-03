@@ -1,0 +1,1474 @@
+{
+  "annonces": [
+    {
+      "id": 1,
+      "titre": "Appartement de luxe au cœur de Brazzaville",
+      "description": "Exceptionnel appartement haut standing situé dans le quartier prestigieux de Moungali. Cette propriété moderne offre une vue panoramique sur le fleuve Congo et la ville. L'appartement comprend un grand séjour lumineux avec baies vitrées, cuisine américaine équipée d'électroménagers haut de gamme, 3 chambres spacieuses avec dressing, 2 salles de bain en marbre et une terrasse privative de 20m². Résidence sécurisée avec piscine, salle de sport, conciergerie 24h/24 et parking privé.",
+      "ville": "Brazzaville",
+      "quartier": "Moungali",
+      "type": "Appartement",
+      "chambres": 3,
+      "prix": 850000,
+      "surface": 150,
+      "statut": "louer",
+      "photos": [
+        "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      ],
+      "date_publication": "2024-01-15",
+      "salles_bain": 2,
+      "etage": 7,
+      "parking": 2,
+      "annee_construction": 2020,
+      "equipements": [
+        "Cuisine équipée haut de gamme",
+        "Climatisation centrale",
+        "Ascenseur",
+        "Piscine",
+        "Salle de sport",
+        "Conciergerie 24h/24",
+        "Domotique",
+        "Double vitrage",
+        "Internet fibre optique",
+        "Générateur électrique"
+      ],
+      "proximites": [
+        "Centre commercial à 300m",
+        "Ambassades à 500m",
+        "Restaurants gastronomiques à 200m",
+        "Hôpital privé à 400m",
+        "Fleuve Congo à 800m"
+      ]
+    },
+    {
+      "id": 2,
+      "titre": "Villa contemporaine à Bacongo",
+      "description": "Magnifique villa moderne avec architecture contemporaine, située dans le quartier historique de Bacongo. Cette propriété unique comprend un salon double hauteur, salle à manger, cuisine professionnelle équipée, bureau, 4 chambres dont une suite parentale, 3 salles de bain et un jardin paysagé avec piscine. Sécurité renforcée avec portail électrique, alarme et vidéosurveillance. Garage pour 3 voitures et dépendance pour personnel.",
+      "ville": "Brazzaville",
+      "quartier": "Bacongo",
+      "type": "Villa",
+      "chambres": 4,
+      "prix": 18500000,
+      "surface": 320,
+      "statut": "vendre",
+      "photos": [
+        "https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1518780664697-55e3ad937233?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      ],
+      "date_publication": "2024-01-14",
+      "salles_bain": 3,
+      "parking": 3,
+      "annee_construction": 2019,
+      "equipements": [
+        "Piscine",
+        "Jardin paysagé",
+        "Sécurité renforcée",
+        "Domotique complète",
+        "Climatisation centrale",
+        "Cuisine professionnelle",
+        "Générateur 30kVA",
+        "Système de filtration d'eau",
+        "Dépendance personnel"
+      ],
+      "proximites": [
+        "Centre historique à 200m",
+        "Marché Total à 400m",
+        "Écoles à 300m",
+        "Centre culturel à 500m",
+        "Fleuve Congo à 600m"
+      ]
+    },
+    {
+      "id": 3,
+      "titre": "Studio meublé étudiant à Poto-Poto",
+      "description": "Studio entièrement meublé et équipé, idéal pour étudiant ou jeune professionnel. Situé à proximité de l'Université Marien Ngouabi et des transports en commun. Le studio comprend un espace de vie avec coin cuisine équipée, salle de bain moderne et grand dressing. Immeuble sécurisé avec gardien. Charges comprises : eau, électricité, internet haut débit.",
+      "ville": "Brazzaville",
+      "quartier": "Poto-Poto",
+      "type": "Studio",
+      "chambres": 1,
+      "prix": 55000,
+      "surface": 28,
+      "statut": "louer",
+      "photos": [
+        "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      ],
+      "date_publication": "2024-01-13",
+      "salles_bain": 1,
+      "etage": 3,
+      "equipements": [
+        "Meublé",
+        "Internet inclus",
+        "Cuisine équipée",
+        "Eau chaude solaire",
+        "Électricité incluse",
+        "Dressing",
+        "Sécurité gardien"
+      ],
+      "proximites": [
+        "Université Marien Ngouabi à 200m",
+        "Bibliothèque à 150m",
+        "Restaurants étudiants à 100m",
+        "Transport en commun à 50m",
+        "Supermarché à 300m"
+      ]
+    },
+    {
+      "id": 4,
+      "titre": "Maison familiale à Talangaï",
+      "description": "Charmante maison familiale dans un quartier calme et résidentiel. Parfaite pour une famille, elle comprend un séjour avec cheminée, salle à manger, cuisine équipée, 3 chambres, 2 salles de bain, bureau et véranda. Grand jardin arboré avec arbres fruitiers, garage et dépendance. Maison rénovée en 2021 avec isolation thermique.",
+      "ville": "Brazzaville",
+      "quartier": "Talangaï",
+      "type": "Maison",
+      "chambres": 3,
+      "prix": 9500000,
+      "surface": 180,
+      "statut": "vendre",
+      "photos": [
+        "https://images.unsplash.com/photo-1513584684374-8bab748fbf90?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      ],
+      "date_publication": "2024-01-12",
+      "salles_bain": 2,
+      "parking": 2,
+      "annee_construction": 1998,
+      "equipements": [
+        "Jardin arboré",
+        "Garage",
+        "Cheminée",
+        "Véranda",
+        "Dépendance",
+        "Isolation thermique",
+        "Eau chaude solaire",
+        "Portail électrique"
+      ],
+      "proximites": [
+        "École primaire à 300m",
+        "Collège à 500m",
+        "Marché à 400m",
+        "Centre de santé à 600m",
+        "Parc à 200m"
+      ]
+    },
+    {
+      "id": 5,
+      "titre": "Appartement neuf à Makelekele",
+      "description": "Appartement neuf dans résidence récente avec services haut de gamme. Situé avec vue dégagée, il comprend un grand séjour, cuisine ouverte équipée, 2 chambres avec placards intégrés, salle de bain et terrasse. Résidence avec piscine, salle de sport et sécurité. Place de parking incluse.",
+      "ville": "Brazzaville",
+      "quartier": "Makelekele",
+      "type": "Appartement",
+      "chambres": 2,
+      "prix": 650000,
+      "surface": 85,
+      "statut": "louer",
+      "photos": [
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      ],
+      "date_publication": "2024-01-11",
+      "salles_bain": 1,
+      "etage": 4,
+      "parking": 1,
+      "annee_construction": 2022,
+      "equipements": [
+        "Terrasse",
+        "Piscine",
+        "Salle de sport",
+        "Sécurité 24h",
+        "Cuisine équipée",
+        "Climatisation",
+        "Internet fibre",
+        "Générateur"
+      ],
+      "proximites": [
+        "Centre commercial à 200m",
+        "Marché à 150m",
+        "École à 300m",
+        "Transport en commun à 100m",
+        "Pharmacie à 250m"
+      ]
+    },
+    {
+      "id": 6,
+      "titre": "Chambre en colocation à Mfilou",
+      "description": "Chambre dans appartement partagé avec 2 autres personnes. L'appartement comprend un salon commun, cuisine équipée, salle de bain partagée. Chambre avec lit, bureau et armoire. Charges comprises : eau, électricité, internet.",
+      "ville": "Brazzaville",
+      "quartier": "Mfilou",
+      "type": "Chambre",
+      "chambres": 1,
+      "prix": 35000,
+      "surface": 15,
+      "statut": "louer",
+      "photos": [
+        "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      ],
+      "date_publication": "2024-01-10",
+      "equipements": [
+        "Meublé",
+        "Internet inclus",
+        "Lave-linge",
+        "Cuisine équipée",
+        "Eau chaude",
+        "Électricité incluse",
+        "Gardien"
+      ],
+      "proximites": [
+        "Université à 800m",
+        "Bibliothèque à 500m",
+        "Marché à 300m",
+        "Transport à 200m",
+        "Parc à 400m"
+      ]
+    },
+    {
+      "id": 7,
+      "titre": "Duplex moderne à Ouenzé",
+      "description": "Superbe duplex avec terrasse offrant une vue magnifique. Au premier niveau : séjour, cuisine ouverte, bureau. Au second niveau : 3 chambres dont une suite parentale. Terrasse aménagée. Appartement entièrement rénové en 2023.",
+      "ville": "Brazzaville",
+      "quartier": "Ouenzé",
+      "type": "Duplex",
+      "chambres": 3,
+      "prix": 12500000,
+      "surface": 140,
+      "statut": "vendre",
+      "photos": [
+        "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      ],
+      "date_publication": "2024-01-09",
+      "salles_bain": 2,
+      "etage": 5,
+      "parking": 1,
+      "annee_construction": 2016,
+      "equipements": [
+        "Terrasse aménagée",
+        "Cuisine équipée",
+        "Climatisation",
+        "Double vitrage",
+        "Ascenseur",
+        "Sécurité",
+        "Internet fibre"
+      ],
+      "proximites": [
+        "Centre-ville à 400m",
+        "Centre commercial à 200m",
+        "Restaurants à 150m",
+        "Banques à 300m",
+        "Hôpital à 500m"
+      ]
+    },
+    {
+      "id": 8,
+      "titre": "Appartement F2 à Madibou",
+      "description": "Appartement F2 rénové, idéal pour jeune couple. Comprend séjour/cuisine ouverte, 2 chambres, salle de bain. Parquet flottant, peinture neuve. Immeuble avec ascendeur.",
+      "ville": "Brazzaville",
+      "quartier": "Madibou",
+      "type": "Appartement",
+      "chambres": 2,
+      "prix": 480000,
+      "surface": 60,
+      "statut": "louer",
+      "photos": [
+        "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      ],
+      "date_publication": "2024-01-08",
+      "salles_bain": 1,
+      "etage": 2,
+      "annee_construction": 2010,
+      "equipements": [
+        "Entièrement rénové",
+        "Cuisine équipée",
+        "Parquet flottant",
+        "Ascenseur",
+        "Eau chaude",
+        "Garde d'enfant"
+      ],
+      "proximites": [
+        "Centre commercial à 150m",
+        "Marché à 200m",
+        "École à 300m",
+        "Transport à 100m",
+        "Parc à 400m"
+      ]
+    },
+    {
+      "id": 9,
+      "titre": "Villa de prestige à Djiri",
+      "description": "Villa exceptionnelle avec dépendance, piscine et grand jardin. Villa principale avec hall d'entrée, séjour, salle à manger, cuisine professionnelle, bureau, 5 chambres, 4 salles de bain. Dépendance indépendante. Piscine, jardin paysagé, sécurité maximale.",
+      "ville": "Brazzaville",
+      "quartier": "Djiri",
+      "type": "Villa",
+      "chambres": 5,
+      "prix": 28500000,
+      "surface": 420,
+      "statut": "vendre",
+      "photos": [
+        "https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      ],
+      "date_publication": "2024-01-07",
+      "salles_bain": 4,
+      "parking": 4,
+      "annee_construction": 2021,
+      "equipements": [
+        "Piscine",
+        "Dépendance indépendante",
+        "Sécurité maximale",
+        "Cuisine professionnelle",
+        "Domotique",
+        "Jardin paysagé",
+        "Générateur 50kVA",
+        "Système d'arrosage"
+      ],
+      "proximites": [
+        "Golf à 2km",
+        "Club privé à 1km",
+        "Écoles internationales à 800m",
+        "Centre commercial à 1.5km",
+        "Hôpital privé à 2km"
+      ]
+    },
+    {
+      "id": 10,
+      "titre": "Studio équipé à Mikalou",
+      "description": "Studio entièrement équipé et meublé, idéal pour jeune professionnel. Comprend espace de vie, cuisine équipée, salle de bain. Climatisation, internet inclus. Immeuble avec gardien.",
+      "ville": "Brazzaville",
+      "quartier": "Mikalou",
+      "type": "Studio",
+      "chambres": 1,
+      "prix": 45000,
+      "surface": 25,
+      "statut": "louer",
+      "photos": [
+        "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      ],
+      "date_publication": "2024-01-06",
+      "salles_bain": 1,
+      "etage": 2,
+      "annee_construction": 2018,
+      "equipements": [
+        "Meublé et équipé",
+        "Internet inclus",
+        "Climatisation",
+        "Eau chaude",
+        "Gardien",
+        "Cuisine équipée"
+      ],
+      "proximites": [
+        "Centre-ville à 150m",
+        "Commerces à 80m",
+        "Transport à 50m",
+        "Restaurants à 100m",
+        "Pharmacie à 120m"
+      ]
+    },
+    {
+      "id": 11,
+      "titre": "Maison de maître à Kintélé",
+      "description": "Ancienne maison coloniale entièrement restaurée, charme d'antan. Comprend séjour avec cheminée, salle à manger, cuisine, 4 chambres, 3 salles de bain, véranda. Grand jardin avec arbres centenaires.",
+      "ville": "Brazzaville",
+      "quartier": "Kintélé",
+      "type": "Maison",
+      "chambres": 4,
+      "prix": 18500000,
+      "surface": 280,
+      "statut": "vendre",
+      "photos": [
+        "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      ],
+      "date_publication": "2024-01-05",
+      "salles_bain": 3,
+      "parking": 3,
+      "annee_construction": 1950,
+      "equipements": [
+        "Jardin arboré",
+        "Cheminée",
+        "Véranda",
+        "Dépendance",
+        "Portail ancien",
+        "Toiture rénovée",
+        "Système électrique neuf"
+      ],
+      "proximites": [
+        "Centre historique à 300m",
+        "Église à 200m",
+        "Marché artisanal à 400m",
+        "Parc national à 500m",
+        "Fleuve à 600m"
+      ]
+    },
+    {
+      "id": 12,
+      "titre": "Appartement meublé temporaire à Plateau",
+      "description": "Appartement meublé pour séjour temporaire, idéal pour expatriés. Contrat flexible, services inclus. Séjour, cuisine équipée, 2 chambres, salle de bain. Services : ménage, linge, petit-déjeuner.",
+      "ville": "Pointe-Noire",
+      "quartier": "Plateau",
+      "type": "Appartement",
+      "chambres": 2,
+      "prix": 350000,
+      "surface": 70,
+      "statut": "louer",
+      "photos": [
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      ],
+      "date_publication": "2024-01-04",
+      "salles_bain": 1,
+      "etage": 5,
+      "annee_construction": 2019,
+      "equipements": [
+        "Meublé",
+        "Services inclus",
+        "Cuisine équipée",
+        "Climatisation",
+        "Internet fibre",
+        "TV satellite",
+        "Ménage quotidien",
+        "Linge fourni"
+      ],
+      "proximites": [
+        "Centre d'affaires à 100m",
+        "Restaurants à 50m",
+        "Plage à 800m",
+        "Super marché à 200m",
+        "Banques à 150m"
+      ]
+    },
+    {
+      "id": 13,
+      "titre": "Terrain constructible à Loandjili",
+      "description": "Terrain plat de 600m², viabilisé, idéal pour construction villa. Situé dans quartier en développement. Titre foncier en règle, permis de construire facile.",
+      "ville": "Pointe-Noire",
+      "quartier": "Loandjili",
+      "type": "Terrain",
+      "chambres": 0,
+      "prix": 6500000,
+      "surface": 600,
+      "statut": "vendre",
+      "photos": [
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      ],
+      "date_publication": "2024-01-03",
+      "annee_construction": null,
+      "equipements": [
+        "Terrain viabilisé",
+        "Titre foncier",
+        "Accès route goudronnée",
+        "Eau disponible",
+        "Électricité disponible",
+        "Plat et constructible"
+      ],
+      "proximites": [
+        "Nouveau quartier résidentiel",
+        "École prévue à 500m",
+        "Centre commercial prévu",
+        "Accès rapide centre-ville",
+        "Zone en développement"
+      ]
+    },
+    {
+      "id": 14,
+      "titre": "Loft industriel à Mpita",
+      "description": "Ancien entrepôt transformé en loft moderne. Hauteur sous plafond 4.5m. Espace ouvert, 2 chambres, grande salle de bain. Caractère industriel préservé.",
+      "ville": "Brazzaville",
+      "quartier": "Mpita",
+      "type": "Loft",
+      "chambres": 2,
+      "prix": 280000,
+      "surface": 120,
+      "statut": "louer",
+      "photos": [
+        "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      ],
+      "date_publication": "2024-01-02",
+      "salles_bain": 1,
+      "annee_construction": 1970,
+      "equipements": [
+        "Hauteur sous plafond 4.5m",
+        "Caractère industriel",
+        "Grandes fenêtres",
+        "Béton apparent",
+        "Chauffage central",
+        "Espace ouvert"
+      ],
+      "proximites": [
+        "Zone artisanale à 100m",
+        "Ateliers à 50m",
+        "Restaurants ouvriers à 200m",
+        "Transport à 150m",
+        "Centre-ville à 1km"
+      ]
+    },
+    {
+      "id": 15,
+      "titre": "Bureau professionnel à Moukondo",
+      "description": "Bureau dans immeuble d'affaires, idéal pour professionnel. Réception, secrétariat disponible. Bureau avec salle de réunion attenante.",
+      "ville": "Pointe-Noire",
+      "quartier": "Moukondo",
+      "type": "Bureau",
+      "chambres": 1,
+      "prix": 180000,
+      "surface": 45,
+      "statut": "louer",
+      "photos": [
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      ],
+      "date_publication": "2024-01-01",
+      "annee_construction": 2015,
+      "equipements": [
+        "Bureau équipé",
+        "Salle de réunion",
+        "Réception",
+        "Secrétariat",
+        "Internet fibre",
+        "Climatisation",
+        "Imprimante"
+      ],
+      "proximites": [
+        "Centre d'affaires à 50m",
+        "Banques à 100m",
+        "Restaurants d'affaires à 80m",
+        "Hôtels à 200m",
+        "Aéroport à 5km"
+      ]
+    },
+    {
+      "id": 16,
+      "titre": "Maison avec vue mer à Ngoyo",
+      "description": "Maison avec vue magnifique sur l'océan Atlantique. Séjour avec baies vitrées, cuisine, 3 chambres, 2 salles de bain, terrasse. Accès direct à plage privée.",
+      "ville": "Pointe-Noire",
+      "quartier": "Ngoyo",
+      "type": "Maison",
+      "chambres": 3,
+      "prix": 4200000,
+      "surface": 160,
+      "statut": "vendre",
+      "photos": [
+        "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      ],
+      "date_publication": "2023-12-31",
+      "salles_bain": 2,
+      "annee_construction": 2012,
+      "equipements": [
+        "Vue mer",
+        "Accès plage privée",
+        "Terrasse",
+        "Climatisation",
+        "Système de sécurité",
+        "Jardin côtier",
+        "Garage"
+      ],
+      "proximites": [
+        "Plage à 20m",
+        "Restaurants de poisson à 100m",
+        "Club nautique à 300m",
+        "Port de pêche à 500m",
+        "Centre-ville à 2km"
+      ]
+    },
+    {
+      "id": 17,
+      "titre": "Appartement avec parking à Tié-Tié",
+      "description": "Appartement spacieux avec place de parking privative. Séjour, cuisine, 3 chambres, salle de bain. Ascenseur, sécurité.",
+      "ville": "Pointe-Noire",
+      "quartier": "Tié-Tié",
+      "type": "Appartement",
+      "chambres": 3,
+      "prix": 280000,
+      "surface": 95,
+      "statut": "louer",
+      "photos": [
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      ],
+      "date_publication": "2023-12-30",
+      "salles_bain": 1,
+      "etage": 3,
+      "parking": 1,
+      "annee_construction": 2010,
+      "equipements": [
+        "Parking privatif",
+        "Ascenseur",
+        "Sécurité",
+        "Cuisine équipée",
+        "Climatisation",
+        "Eau chaude"
+      ],
+      "proximites": [
+        "Marché central à 200m",
+        "Écoles à 300m",
+        "Hôpital à 400m",
+        "Transport à 150m",
+        "Parc à 500m"
+      ]
+    },
+    {
+      "id": 18,
+      "titre": "Villa avec piscine à Voungou",
+      "description": "Villa moderne avec piscine et jardin. Séjour, cuisine, 4 chambres, 3 salles de bain. Piscine sécurisée, jardin paysagé.",
+      "ville": "Pointe-Noire",
+      "quartier": "Voungou",
+      "type": "Villa",
+      "chambres": 4,
+      "prix": 18500000,
+      "surface": 280,
+      "statut": "vendre",
+      "photos": [
+        "https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1518780664697-55e3ad937233?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      ],
+      "date_publication": "2023-12-29",
+      "salles_bain": 3,
+      "parking": 2,
+      "annee_construction": 2018,
+      "equipements": [
+        "Piscine",
+        "Jardin paysagé",
+        "Sécurité",
+        "Climatisation",
+        "Cuisine équipée",
+        "Portail électrique"
+      ],
+      "proximites": [
+        "Quartier résidentiel calme",
+        "École internationale à 1km",
+        "Golf à 2km",
+        "Centre commercial à 1.5km",
+        "Plage à 3km"
+      ]
+    },
+    {
+      "id": 19,
+      "titre": "Studio vue mer à la Côte Sauvage",
+      "description": "Studio avec balcon offrant une vue magnifique sur l'océan. Idéal pour vacances ou résidence secondaire. Meublé, équipé.",
+      "ville": "Pointe-Noire",
+      "quartier": "Côte Sauvage",
+      "type": "Studio",
+      "chambres": 1,
+      "prix": 180000,
+      "surface": 35,
+      "statut": "louer",
+      "photos": [
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      ],
+      "date_publication": "2023-12-28",
+      "salles_bain": 1,
+      "etage": 6,
+      "annee_construction": 2021,
+      "equipements": [
+        "Vue mer",
+        "Balcon",
+        "Meublé",
+        "Climatisation",
+        "Cuisine équipée",
+        "TV satellite",
+        "Internet"
+      ],
+      "proximites": [
+        "Plage à 50m",
+        "Restaurants à 100m",
+        "Bars à 80m",
+        "Activités nautiques à 200m",
+        "Centre-ville à 1.5km"
+      ]
+    },
+    {
+      "id": 20,
+      "titre": "Appartement dernier étage à Mpaka",
+      "description": "Appartement au dernier étage avec terrasse privative et vue dégagée. Séjour, cuisine, 3 chambres, 2 salles de bain. Terrasse de 25m².",
+      "ville": "Dolisie",
+      "quartier": "Mpaka",
+      "type": "Appartement",
+      "chambres": 3,
+      "prix": 220000,
+      "surface": 110,
+      "statut": "louer",
+      "photos": [
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      ],
+      "date_publication": "2023-12-27",
+      "salles_bain": 2,
+      "etage": 5,
+      "parking": 1,
+      "annee_construction": 2017,
+      "equipements": [
+        "Terrasse privative",
+        "Vue dégagée",
+        "Cuisine équipée",
+        "Climatisation",
+        "Ascenseur",
+        "Sécurité"
+      ],
+      "proximites": [
+        "Centre-ville Dolisie à 300m",
+        "Marché à 200m",
+        "Écoles à 400m",
+        "Hôpital à 500m",
+        "Parc à 600m"
+      ]
+    },
+    {
+      "id": 21,
+      "titre": "Villa contemporaine à Nkayi",
+      "description": "Villa moderne à l'architecture contemporaine. Grandes baies vitrées, volumes généreux. 4 chambres, 3 salles de bain, piscine, jardin.",
+      "ville": "Nkayi",
+      "quartier": "Centre-ville",
+      "type": "Villa",
+      "chambres": 4,
+      "prix": 12500000,
+      "surface": 250,
+      "statut": "vendre",
+      "photos": [
+        "https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1518780664697-55e3ad937233?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      ],
+      "date_publication": "2023-12-26",
+      "salles_bain": 3,
+      "parking": 2,
+      "annee_construction": 2020,
+      "equipements": [
+        "Architecture contemporaine",
+        "Piscine",
+        "Jardin",
+        "Climatisation",
+        "Domotique",
+        "Portail électrique"
+      ],
+      "proximites": [
+        "Centre-ville Nkayi à 400m",
+        "Écoles à 300m",
+        "Marché à 500m",
+        "Hôpital à 600m",
+        "Usine sucrière à 2km"
+      ]
+    },
+    {
+      "id": 22,
+      "titre": "Appartement étudiant à Owando",
+      "description": "Petit appartement économique, proche du campus universitaire. Séjour/cuisine, chambre, salle de bain. Idéal pour étudiant.",
+      "ville": "Owando",
+      "quartier": "Universitaire",
+      "type": "Appartement",
+      "chambres": 1,
+      "prix": 65000,
+      "surface": 32,
+      "statut": "louer",
+      "photos": [
+        "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      ],
+      "date_publication": "2023-12-25",
+      "salles_bain": 1,
+      "etage": 2,
+      "annee_construction": 2015,
+      "equipements": [
+        "Économique",
+        "Cuisine équipée",
+        "Eau chaude",
+        "Électricité",
+        "Internet disponible",
+        "Proche campus"
+      ],
+      "proximites": [
+        "Campus universitaire à 100m",
+        "Bibliothèque à 50m",
+        "Restaurants étudiants à 80m",
+        "Transport à 150m",
+        "Supermarché à 300m"
+      ]
+    },
+    {
+      "id": 23,
+      "titre": "Boutique commerciale à Mossendjo",
+      "description": "Local commercial en rez-de-chaussée, vitrine sur rue principale. Idéal pour commerce ou bureau. Surface de 80m².",
+      "ville": "Mossendjo",
+      "quartier": "Centre commercial",
+      "type": "Commerce",
+      "chambres": 0,
+      "prix": 220000,
+      "surface": 80,
+      "statut": "louer",
+      "photos": [
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      ],
+      "date_publication": "2023-12-24",
+      "annee_construction": 2005,
+      "equipements": [
+        "Vitrine sur rue",
+        "Local commercial",
+        "Électricité triphasée",
+        "Eau courante",
+        "Toilettes",
+        "Stockage"
+      ],
+      "proximites": [
+        "Rue commerçante à 0m",
+        "Marché central à 100m",
+        "Banques à 150m",
+        "Parking à 50m",
+        "Centre-ville à 200m"
+      ]
+    },
+    {
+      "id": 24,
+      "titre": "Maison avec garage double à Gamboma",
+      "description": "Maison avec garage pour 2 voitures, jardin arrière clôturé. Séjour, cuisine, 3 chambres, salle de bain. Garage double.",
+      "ville": "Gamboma",
+      "quartier": "Résidentiel",
+      "type": "Maison",
+      "chambres": 3,
+      "prix": 8500000,
+      "surface": 160,
+      "statut": "vendre",
+      "photos": [
+        "https://images.unsplash.com/photo-1513584684374-8bab748fbf90?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      ],
+      "date_publication": "2023-12-23",
+      "salles_bain": 1,
+      "parking": 2,
+      "annee_construction": 2010,
+      "equipements": [
+        "Garage double",
+        "Jardin clôturé",
+        "Cuisine équipée",
+        "Eau chaude solaire",
+        "Portail manuel",
+        "Clôture complète"
+      ],
+      "proximites": [
+        "Centre Gamboma à 500m",
+        "École à 400m",
+        "Marché à 600m",
+        "Hôpital à 700m",
+        "Gare à 1km"
+      ]
+    },
+    {
+      "id": 25,
+      "titre": "Chambre de service à Impfondo",
+      "description": "Chambre indépendante pour employé de maison. Située dans la cour d'une villa principale. Salle de bain attenante.",
+      "ville": "Impfondo",
+      "quartier": "Résidentiel",
+      "type": "Chambre",
+      "chambres": 1,
+      "prix": 25000,
+      "surface": 12,
+      "statut": "louer",
+      "photos": [
+        "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      ],
+      "date_publication": "2023-12-22",
+      "salles_bain": 1,
+      "annee_construction": 2015,
+      "equipements": [
+        "Chambre indépendante",
+        "Salle de bain attenante",
+        "Électricité",
+        "Eau courante",
+        "Petite cuisine",
+        "Cour commune"
+      ],
+      "proximites": [
+        "Villa principale à 20m",
+        "Quartier résidentiel",
+        "Commerces à 300m",
+        "Transport à 400m",
+        "Centre-ville à 500m"
+      ]
+    },
+    {
+      "id": 26,
+      "titre": "Appartement familial à Sibiti",
+      "description": "Grand appartement familial spacieux. Grand séjour, cuisine indépendante, 4 chambres, 2 salles de bain. Idéal pour grande famille.",
+      "ville": "Sibiti",
+      "quartier": "Centre",
+      "type": "Appartement",
+      "chambres": 4,
+      "prix": 180000,
+      "surface": 130,
+      "statut": "louer",
+      "photos": [
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      ],
+      "date_publication": "2023-12-21",
+      "salles_bain": 2,
+      "etage": 2,
+      "parking": 1,
+      "annee_construction": 2012,
+      "equipements": [
+        "Spacieux",
+        "Cuisine indépendante",
+        "2 salles de bain",
+        "Climatisation",
+        "Eau chaude",
+        "Balcon"
+      ],
+      "proximites": [
+        "Centre-ville Sibiti à 200m",
+        "Écoles à 150m",
+        "Marché à 100m",
+        "Hôpital à 300m",
+        "Administration à 250m"
+      ]
+    },
+    {
+      "id": 27,
+      "titre": "Villa de prestige à Oyo",
+      "description": "Villa exceptionnelle avec toutes les commodités. Piscine, tennis privé, système de sécurité avancé. 7 chambres, 5 salles de bain.",
+      "ville": "Oyo",
+      "quartier": "Prestige",
+      "type": "Villa",
+      "chambres": 7,
+      "prix": 38500000,
+      "surface": 550,
+      "statut": "vendre",
+      "photos": [
+        "https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1518780664697-55e3ad937233?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      ],
+      "date_publication": "2023-12-20",
+      "salles_bain": 5,
+      "parking": 4,
+      "annee_construction": 2022,
+      "equipements": [
+        "Piscine olympique",
+        "Court de tennis",
+        "Sécurité maximale",
+        "Domotique complète",
+        "Cuisine professionnelle",
+        "Salle de cinéma",
+        "Gymnase",
+        "Spa"
+      ],
+      "proximites": [
+        "Palais présidentiel à 2km",
+        "Golf à 1km",
+        "Club privé à 800m",
+        "Écoles internationales à 1.5km",
+        "Hôpital privé à 2km"
+      ]
+    },
+    {
+      "id": 28,
+      "titre": "Studio neuf meublé à Kindamba",
+      "description": "Studio neuf meublé, première location. Tout neuf, garantie constructeur. Séjour/cuisine, salle de bain. Clé en main.",
+      "ville": "Kindamba",
+      "quartier": "Nouveau",
+      "type": "Studio",
+      "chambres": 1,
+      "prix": 75000,
+      "surface": 30,
+      "statut": "louer",
+      "photos": [
+        "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      ],
+      "date_publication": "2023-12-19",
+      "salles_bain": 1,
+      "etage": 1,
+      "annee_construction": 2023,
+      "equipements": [
+        "Neuf",
+        "Meublé",
+        "Cuisine équipée",
+        "Climatisation",
+        "Eau chaude",
+        "Internet disponible",
+        "Garantie constructeur"
+      ],
+      "proximites": [
+        "Centre Kindamba à 400m",
+        "Commerces à 200m",
+        "Transport à 150m",
+        "École à 300m",
+        "Centre de santé à 250m"
+      ]
+    },
+    {
+      "id": 29,
+      "titre": "Appartement duplex à Makoua",
+      "description": "Appartement duplex avec double hauteur, mezzanine. Architecture originale. Séjour double hauteur, cuisine, 2 chambres, salle de bain.",
+      "ville": "Makoua",
+      "quartier": "Moderne",
+      "type": "Duplex",
+      "chambres": 2,
+      "prix": 140000,
+      "surface": 85,
+      "statut": "louer",
+      "photos": [
+        "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      ],
+      "date_publication": "2023-12-18",
+      "salles_bain": 1,
+      "etage": 3,
+      "annee_construction": 2019,
+      "equipements": [
+        "Duplex",
+        "Double hauteur",
+        "Mezzanine",
+        "Cuisine équipée",
+        "Climatisation",
+        "Architecture originale"
+      ],
+      "proximites": [
+        "Centre Makoua à 300m",
+        "Marché à 200m",
+        "Banques à 250m",
+        "Écoles à 400m",
+        "Hôpital à 500m"
+      ]
+    },
+    {
+      "id": 30,
+      "titre": "Maison en bord de rivière à Ewo",
+      "description": "Maison au calme avec accès direct à la rivière. Ponton privé, paysage paisible. Séjour, cuisine, 3 chambres, salle de bain, véranda.",
+      "ville": "Ewo",
+      "quartier": "Rivière",
+      "type": "Maison",
+      "chambres": 3,
+      "prix": 12500000,
+      "surface": 180,
+      "statut": "vendre",
+      "photos": [
+        "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      ],
+      "date_publication": "2023-12-17",
+      "salles_bain": 1,
+      "annee_construction": 2008,
+      "equipements": [
+        "Accès rivière",
+        "Ponton privé",
+        "Véranda",
+        "Jardin riverain",
+        "Eau de rivière utilisable",
+        "Calme absolu"
+      ],
+      "proximites": [
+        "Rivière à 0m",
+        "Forêt à 50m",
+        "Village à 1km",
+        "Centre Ewo à 2km",
+        "Pêche possible sur place"
+      ]
+    },
+    {
+      "id": 31,
+      "titre": "Appartement avec balcon à Okoyo",
+      "description": "Appartement avec grand balcon ensoleillé. Idéal pour petit jardin ou détente. Séjour, cuisine, 2 chambres, salle de bain.",
+      "ville": "Okoyo",
+      "quartier": "Centre",
+      "type": "Appartement",
+      "chambres": 2,
+      "prix": 95000,
+      "surface": 65,
+      "statut": "louer",
+      "photos": [
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      ],
+      "date_publication": "2023-12-16",
+      "salles_bain": 1,
+      "etage": 2,
+      "annee_construction": 2014,
+      "equipements": [
+        "Grand balcon",
+        "Ensoleillé",
+        "Cuisine équipée",
+        "Eau chaude",
+        "Climatisation",
+        "Vue sur jardin"
+      ],
+      "proximites": [
+        "Centre Okoyo à 150m",
+        "Marché à 100m",
+        "École à 200m",
+        "Transport à 80m",
+        "Parc à 300m"
+      ]
+    },
+    {
+      "id": 32,
+      "titre": "Chambre étudiante à Boundji",
+      "description": "Chambre dans résidence universitaire, wifi inclus, laverie commune. Idéal pour étudiant. Chambre simple avec bureau.",
+      "ville": "Boundji",
+      "quartier": "Universitaire",
+      "type": "Chambre",
+      "chambres": 1,
+      "prix": 45000,
+      "surface": 14,
+      "statut": "louer",
+      "photos": [
+        "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      ],
+      "date_publication": "2023-12-15",
+      "salles_bain": 0,
+      "annee_construction": 2018,
+      "equipements": [
+        "Résidence universitaire",
+        "Wifi inclus",
+        "Laverie commune",
+        "Bureau",
+        "Armoire",
+        "Éclairage étudiant"
+      ],
+      "proximites": [
+        "Campus à 50m",
+        "Bibliothèque à 30m",
+        "Restaurant universitaire à 100m",
+        "Sport universitaire à 200m",
+        "Transport à 150m"
+      ]
+    },
+    {
+      "id": 33,
+      "titre": "Villa avec guest house à Kelle",
+      "description": "Villa avec maison d'amis indépendante. Maison principale + petite maison pour invêts. Piscine, jardin, garage.",
+      "ville": "Kelle",
+      "quartier": "Prestige",
+      "type": "Villa",
+      "chambres": 5,
+      "prix": 22500000,
+      "surface": 380,
+      "statut": "vendre",
+      "photos": [
+        "https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1518780664697-55e3ad937233?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      ],
+      "date_publication": "2023-12-14",
+      "salles_bain": 3,
+      "parking": 3,
+      "annee_construction": 2020,
+      "equipements": [
+        "Guest house indépendante",
+        "Piscine",
+        "Jardin paysagé",
+        "Sécurité",
+        "Climatisation",
+        "Garage double"
+      ],
+      "proximites": [
+        "Centre Kelle à 500m",
+        "École à 400m",
+        "Marché à 300m",
+        "Hôpital à 600m",
+        "Administration à 450m"
+      ]
+    },
+    {
+      "id": 34,
+      "titre": "Studio économique à Mbinda",
+      "description": "Studio économique, prix attractif. Parfait pour premier logement. Séjour/cuisine, salle de bain. Bas prix.",
+      "ville": "Mbinda",
+      "quartier": "Économique",
+      "type": "Studio",
+      "chambres": 1,
+      "prix": 55000,
+      "surface": 25,
+      "statut": "louer",
+      "photos": [
+        "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      ],
+      "date_publication": "2023-12-13",
+      "salles_bain": 1,
+      "etage": 1,
+      "annee_construction": 2012,
+      "equipements": [
+        "Économique",
+        "Cuisine équipée",
+        "Eau chaude",
+        "Électricité",
+        "Fenêtre double",
+        "Sol carrelé"
+      ],
+      "proximites": [
+        "Centre Mbinda à 200m",
+        "Commerces à 150m",
+        "Transport à 100m",
+        "École à 300m",
+        "Marché à 250m"
+      ]
+    },
+    {
+      "id": 35,
+      "titre": "Appartement haut de gamme à Loudima",
+      "description": "Appartement avec finitions luxueuses, marbre, équipements haut de gamme. Séjour, cuisine, 3 chambres, 2 salles de bain.",
+      "ville": "Loudima",
+      "quartier": "Luxe",
+      "type": "Appartement",
+      "chambres": 3,
+      "prix": 280000,
+      "surface": 110,
+      "statut": "louer",
+      "photos": [
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      ],
+      "date_publication": "2023-12-12",
+      "salles_bain": 2,
+      "etage": 3,
+      "parking": 2,
+      "annee_construction": 2021,
+      "equipements": [
+        "Finitions luxueuses",
+        "Marbre",
+        "Équipements haut de gamme",
+        "Climatisation centrale",
+        "Domotique",
+        "Ascenseur panoramique"
+      ],
+      "proximites": [
+        "Centre Loudima à 100m",
+        "Restaurants gastronomiques à 50m",
+        "Banques à 80m",
+        "Boutiques de luxe à 120m",
+        "Parc à 200m"
+      ]
+    },
+    {
+      "id": 36,
+      "titre": "Maison traditionnelle à Mindouli",
+      "description": "Maison de style traditionnel congolais. Véranda, grand terrain arboré. Séjour, cuisine, 3 chambres, salle de bain.",
+      "ville": "Mindouli",
+      "quartier": "Traditionnel",
+      "type": "Maison",
+      "chambres": 3,
+      "prix": 8500000,
+      "surface": 200,
+      "statut": "vendre",
+      "photos": [
+        "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      ],
+      "date_publication": "2023-12-11",
+      "salles_bain": 1,
+      "parking": 1,
+      "annee_construction": 1995,
+      "equipements": [
+        "Style traditionnel",
+        "Véranda",
+        "Terrain arboré",
+        "Cuisine traditionnelle",
+        "Toiture en paille moderne",
+        "Jardin potager"
+      ],
+      "proximites": [
+        "Village traditionnel à 100m",
+        "Marché artisanal à 150m",
+        "École à 300m",
+        "Centre de santé à 400m",
+        "Forêt à 500m"
+      ]
+    },
+    {
+      "id": 37,
+      "titre": "Chambre dans appartement à Ngabé",
+      "description": "Chambre en colocation avec 2 autres personnes. Salon commun, salle de bain partagée. Économique, convivial.",
+      "ville": "Ngabé",
+      "quartier": "Colocation",
+      "type": "Chambre",
+      "chambres": 1,
+      "prix": 35000,
+      "surface": 12,
+      "statut": "louer",
+      "photos": [
+        "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      ],
+      "date_publication": "2023-12-10",
+      "salles_bain": 0,
+      "annee_construction": 2016,
+      "equipements": [
+        "Colocation",
+        "Salon commun",
+        "Cuisine commune",
+        "Internet",
+        "Électricité comprise",
+        "Eau comprise"
+      ],
+      "proximites": [
+        "Centre Ngabé à 250m",
+        "Commerces à 180m",
+        "Transport à 120m",
+        "École à 300m",
+        "Parc à 400m"
+      ]
+    },
+    {
+      "id": 38,
+      "titre": "Appartement rez-de-chaussée à Kimongo",
+      "description": "Appartement au rez-de-chaussée, accès direct au jardin. Pas d'escaliers, pratique. Séjour, cuisine, 2 chambres, salle de bain.",
+      "ville": "Kimongo",
+      "quartier": "Jardin",
+      "type": "Appartement",
+      "chambres": 2,
+      "prix": 120000,
+      "surface": 70,
+      "statut": "louer",
+      "photos": [
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      ],
+      "date_publication": "2023-12-09",
+      "salles_bain": 1,
+      "etage": 0,
+      "annee_construction": 2018,
+      "equipements": [
+        "Rez-de-chaussée",
+        "Accès direct jardin",
+        "Pas d'escaliers",
+        "Cuisine équipée",
+        "Climatisation",
+        "Porte-fenêtre jardin"
+      ],
+      "proximites": [
+        "Centre Kimongo à 180m",
+        "Jardin public à 50m",
+        "Marché à 200m",
+        "École à 150m",
+        "Transport à 100m"
+      ]
+    },
+    {
+      "id": 39,
+      "titre": "Villa avec piscine chauffée à Madingo-Kayes",
+      "description": "Villa avec piscine utilisable toute l'année, système solaire. Grande villa, 5 chambres, 4 salles de bain, garage triple.",
+      "ville": "Madingo-Kayes",
+      "quartier": "Prestige",
+      "type": "Villa",
+      "chambres": 5,
+      "prix": 32500000,
+      "surface": 420,
+      "statut": "vendre",
+      "photos": [
+        "https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1518780664697-55e3ad937233?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      ],
+      "date_publication": "2023-12-08",
+      "salles_bain": 4,
+      "parking": 3,
+      "annee_construction": 2022,
+      "equipements": [
+        "Piscine chauffée solaire",
+        "Système solaire complet",
+        "Climatisation géothermique",
+        "Domotique avancée",
+        "Cuisine professionnelle",
+        "Salle de cinéma",
+        "Spa"
+      ],
+      "proximites": [
+        "Plage à 800m",
+        "Golf à 1km",
+        "Club nautique à 600m",
+        "Écoles internationales à 1.5km",
+        "Centre commercial à 2km"
+      ]
+    },
+    {
+      "id": 40,
+      "titre": "Studio en résidence à Zanaga",
+      "description": "Studio dans résidence avec gardiennage, jardin commun, local vélo. Sécurisé, pratique. Studio meublé, équipé.",
+      "ville": "Zanaga",
+      "quartier": "Résidence",
+      "type": "Studio",
+      "chambres": 1,
+      "prix": 85000,
+      "surface": 32,
+      "statut": "louer",
+      "photos": [
+        "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      ],
+      "date_publication": "2023-12-07",
+      "salles_bain": 1,
+      "etage": 2,
+      "annee_construction": 2020,
+      "equipements": [
+        "Résidence sécurisée",
+        "Gardiennage",
+        "Jardin commun",
+        "Local vélo",
+        "Studio meublé",
+        "Internet fibre",
+        "Climatisation"
+      ],
+      "proximites": [
+        "Centre Zanaga à 300m",
+        "Commerces à 200m",
+        "Transport à 150m",
+        "École à 250m",
+        "Parc à 180m"
+      ]
+    }
+  ]
+}

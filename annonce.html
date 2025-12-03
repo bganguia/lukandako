@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LukaNdako | Détails de l'Annonce</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- Navigation Premium -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 1rem;">
+                    <div class="logo-icon">
+                        <i class="fas fa-building-columns"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>LukaNdako</h1>
+                        <p class="logo-subtitle">L'excellence immobilière</p>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="nav-actions">
+                <a href="index.html" class="back-btn">
+                    <i class="fas fa-arrow-left"></i> Retour aux annonces
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Détails de l'Annonce -->
+    <main class="annonce-detail-container">
+        <div class="container">
+            <!-- Loading State -->
+            <div class="loading-state" id="loadingState">
+                <div class="spinner">
+                    <i class="fas fa-circle-notch fa-spin"></i>
+                </div>
+                <p>Chargement des détails...</p>
+            </div>
+
+            <!-- Contenu de l'annonce -->
+            <div class="annonce-detail-content" id="annonceContent" style="display: none;">
+                <!-- Galerie d'images -->
+                <div class="image-gallery">
+                    <div class="main-image">
+                        <img id="mainImage" src="" alt="Photo principale">
+                        <div class="image-badge" id="statutBadge"></div>
+                        <div class="image-count">
+                            <i class="fas fa-camera"></i> <span id="photoCount">0</span>
+                        </div>
+                    </div>
+                    <div class="thumbnail-grid" id="thumbnailContainer">
+                        <!-- Les miniatures seront ajoutées ici depuis annonces.json -->
+                    </div>
+                </div>
+
+                <!-- Informations principales -->
+                <div class="annonce-info">
+                    <div class="annonce-header-detail">
+                        <div class="header-left">
+                            <h1 id="annonceTitle"></h1>
+                            <div class="location-detail">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span id="annonceLocation"></span>
+                            </div>
+                            <div class="annonce-meta">
+                                <span class="meta-item" id="annonceType"></span>
+                                <span class="meta-item" id="annonceDate"></span>
+                                <span class="meta-item" id="annonceRef"></span>
+                            </div>
+                        </div>
+                        <div class="header-right">
+                            <div class="price-detail">
+                                <span id="annoncePrix"></span>
+                                <span id="prixUnite"></span>
+                            </div>
+                            <button class="contact-agent-btn" onclick="contactAgent()">
+                                <i class="fas fa-phone-alt"></i> Contacter l'agent
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="description-section">
+                        <h2>Description</h2>
+                        <p id="annonceDescription"></p>
+                    </div>
+
+                    <!-- Caractéristiques -->
+                    <div class="features-section">
+                        <h2>Caractéristiques</h2>
+                        <div class="features-grid" id="featuresGrid">
+                            <!-- Les caractéristiques seront ajoutées ici depuis annonces.json -->
+                        </div>
+                    </div>
+
+                    <!-- Équipements -->
+                    <div class="equipment-section" id="equipmentSection" style="display: none;">
+                        <h2>Équipements & Commodités</h2>
+                        <div class="equipment-grid" id="equipmentList">
+                            <!-- Les équipements seront ajoutés ici depuis annonces.json -->
+                        </div>
+                    </div>
+
+                    <!-- Proximités -->
+                    <div class="equipment-section" id="proximitySection" style="display: none;">
+                        <h2>À proximité</h2>
+                        <div class="equipment-grid" id="proximityList">
+                            <!-- Les proximités seront ajoutées ici depuis annonces.json -->
+                        </div>
+                    </div>
+
+                    <!-- Contact Agent -->
+                    <div class="agent-section">
+                        <h2>Agent Responsable</h2>
+                        <div class="agent-card">
+                            <div class="agent-avatar">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <div class="agent-info">
+                                <h3 id="agentName"></h3>
+                                <p class="agent-title" id="agentTitle"></p>
+                                <div class="agent-contact">
+                                    <p><i class="fas fa-phone"></i> <span id="agentPhone"></span></p>
+                                    <p><i class="fas fa-envelope"></i> <span id="agentEmail"></span></p>
+                                </div>
+                            </div>
+                            <button class="schedule-btn" onclick="scheduleVisit()">
+                                <i class="fas fa-calendar-check"></i> Planifier une visite
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Annonce non trouvée -->
+            <div class="annonce-not-found" id="annonceNotFound" style="display: none;">
+                <div class="not-found-icon">
+                    <i class="fas fa-exclamation-triangle"></i>
+                </div>
+                <h2>Annonce non trouvée</h2>
+                <p>Cette annonce n'existe pas ou a été supprimée.</p>
+                <a href="index.html" class="back-home-btn">
+                    <i class="fas fa-home"></i> Retour à l'accueil
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <!-- Footer Premium -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-column">
+                        <div class="footer-logo">
+                            <i class="fas fa-building-columns"></i>
+                            <div>
+                                <h3>LukaNdako</h3>
+                                <p>Excellence Immobilière</p>
+                            </div>
+                        </div>
+                        <p class="footer-description">
+                            Nous transformons la recherche immobilière en une expérience d'exception, 
+                            alliant technologie de pointe et expertise humaine.
+                        </p>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Nos Services</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Achat Premium</a></li>
+                            <li><a href="#">Location Exclusive</a></li>
+                            <li><a href="#">Gestion Patrimoine</a></li>
+                            <li><a href="#">Conseil en Investissement</a></li>
+                            <li><a href="#">Évaluation Gratuite</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Entreprise</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">À propos</a></li>
+                            <li><a href="#">Notre Équipe</a></li>
+                            <li><a href="#">Carrières</a></li>
+                            <li><a href="#">Presse</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Contact</h4>
+                        <div class="contact-info">
+                            <p><i class="fas fa-map-marker-alt"></i> Gombe, Kinshasa</p>
+                            <p><i class="fas fa-phone"></i> +243 81 234 5678</p>
+                            <p><i class="fas fa-envelope"></i> contact@lukan.com</p>
+                        </div>
+                        <button class="newsletter-btn">
+                            <i class="fas fa-paper-plane"></i> S'inscrire à la newsletter
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2024 LukaNdako. Tous droits réservés. | <a href="#">Confidentialité</a> | <a href="#">Conditions</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="annonce.js"></script>
+    <script>
+        function contactAgent() {
+            const phone = document.getElementById('agentPhone').textContent;
+            alert(`Contacter l'agent au ${phone}\nOu par email: ${document.getElementById('agentEmail').textContent}`);
+        }
+        
+        function scheduleVisit() {
+            const annonceTitle = document.getElementById('annonceTitle').textContent;
+            alert(`Planifier une visite pour: ${annonceTitle}\nUn agent vous contactera pour fixer un rendez-vous.`);
+        }
+    </script>
+</body>
+</html>
