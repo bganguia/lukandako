@@ -1,3 +1,58 @@
+// Configuration du menu utilisateur
+function setupUserMenu() {
+    const userMenu = $('#userMenu');
+    const userDropdown = $('#userDropdown');
+    
+    // Toggle du menu au clic
+    userMenu.click(function(e) {
+        e.stopPropagation();
+        userMenu.toggleClass('active');
+        userDropdown.toggleClass('show');
+    });
+    
+    // Fermer le menu en cliquant ailleurs
+    $(document).click(function(e) {
+        if (!$(e.target).closest('#userMenu, #userDropdown').length) {
+            userMenu.removeClass('active');
+            userDropdown.removeClass('show');
+        }
+    });
+    
+    // Actions des options du menu
+    $('#mySpace').click(function(e) {
+        e.preventDefault();
+        alert('Ouverture de "Mon espace" - Cette fonctionnalité sera implémentée prochainement.');
+        userMenu.removeClass('active');
+        userDropdown.removeClass('show');
+    });
+    
+    $('#buyPoints').click(function(e) {
+        e.preventDefault();
+        alert('Achat de points - Cette fonctionnalité sera implémentée prochainement.');
+        userMenu.removeClass('active');
+        userDropdown.removeClass('show');
+    });
+    
+    $('#logout').click(function(e) {
+        e.preventDefault();
+        if (confirm('Êtes-vous sûr de vouloir vous déconnecter ?')) {
+            alert('Déconnexion réussie - Redirection vers la page de connexion.');
+            // Ici vous pourriez rediriger vers une page de login
+            // window.location.href = 'login.html';
+        }
+        userMenu.removeClass('active');
+        userDropdown.removeClass('show');
+    });
+    
+    // Fermer le menu avec la touche Échap
+    $(document).keydown(function(e) {
+        if (e.key === 'Escape') {
+            userMenu.removeClass('active');
+            userDropdown.removeClass('show');
+        }
+    });
+}
+
 $(document).ready(function() {
     // Variables globales
     let allAnnonces = [];
@@ -10,10 +65,11 @@ $(document).ready(function() {
     init();
 
     function init() {
-        loadAnnonces();
-        setupEventListeners();
-        setupSearchTabs();
-    }
+    loadAnnonces();
+    setupEventListeners();
+    setupSearchTabs();
+    setupUserMenu(); // NEW LIGNE
+}
 
     // Chargement des annonces
     function loadAnnonces() {
@@ -127,6 +183,12 @@ function setupEventListeners() {
             });
             icon.removeClass('fa-chevron-down').addClass('fa-chevron-up');
         }
+    });
+
+    // Dans setupEventListeners(), ajoutez ceci après la gestion des filtres
+    $('#villeFilter, #quartierFilter, #typeFilter, #chambresFilter, #sortSelect, #prixMin, #prixMax, #surfaceMin, #surfaceMax').on('click', function() {
+        $('#userMenu').removeClass('active');
+        $('#userDropdown').removeClass('show');
     });
 
     // Boutons "Voir détails" des cartes featured

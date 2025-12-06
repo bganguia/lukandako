@@ -6,23 +6,24 @@
 }
 
 :root {
-    --primary: #2A4365;
-    --primary-light: #4299E1;
-    --secondary: #D69E2E;
-    --accent: #3182CE;
-    --dark: #1A202C;
-    --light: #F7FAFC;
-    --gray-100: #EDF2F7;
-    --gray-200: #E2E8F0;
-    --gray-300: #CBD5E0;
-    --gray-700: #4A5568;
-    --success: #38A169;
-    --warning: #D69E2E;
-    --danger: #E53E3E;
-    --shadow-sm: 0 1px 3px rgba(0,0,0,0.12);
-    --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
-    --shadow-lg: 0 10px 25px rgba(0,0,0,0.1);
-    --shadow-xl: 0 20px 40px rgba(0,0,0,0.15);
+    --primary: #912424;          /* CHANGEMENT: Rouge intense */
+    --primary-light: #ec6565;    /* CHANGEMENT: Rouge plus clair */
+    --primary-dark: #861616;     /* NOUVEAU: Rouge foncé */
+    --secondary: #D97706;        /* CHANGEMENT: Orange pour accent */
+    --accent: #B91C1C;           /* CHANGEMENT: Rouge comme accent */
+    --dark: #1F2937;
+    --light: #FEF2F2;            /* CHANGEMENT: Rouge très clair */
+    --gray-100: #FEE2E2;         /* CHANGEMENT: Rouge pâle */
+    --gray-200: #FECACA;         /* CHANGEMENT: Rouge clair */
+    --gray-300: #FCA5A5;         /* CHANGEMENT: Rouge moyen clair */
+    --gray-700: #4B5563;
+    --success: #059669;
+    --warning: #D97706;
+    --danger: #DC2626;           /* CHANGEMENT: Rouge */
+    --shadow-sm: 0 1px 3px rgba(185, 28, 28, 0.12);      /* CHANGEMENT */
+    --shadow-md: 0 4px 6px rgba(185, 28, 28, 0.1);       /* CHANGEMENT */
+    --shadow-lg: 0 10px 25px rgba(185, 28, 28, 0.1);     /* CHANGEMENT */
+    --shadow-xl: 0 20px 40px rgba(185, 28, 28, 0.15);    /* CHANGEMENT */
     --radius-sm: 8px;
     --radius-md: 12px;
     --radius-lg: 16px;
@@ -167,8 +168,7 @@ h3 {
 .hero-section {
     position: relative;
     height: 600px;
-    background: linear-gradient(rgba(42, 67, 101, 0.9), rgba(66, 153, 225, 0.7)),
-                url('images/congo-brazzaville.jpg');
+    background: linear-gradient(rgb(8, 8, 8, 90%), rgba(95, 88, 88, 0.7)), url('https://images.unsplash.com/photo-1518780664697-55e3ad937233?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -197,6 +197,315 @@ h3 {
     margin-bottom: 3rem;
     opacity: 0.9;
     font-weight: 300;
+}
+
+/* ===== MENU UTILISATEUR ===== */
+.user-menu {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem 1rem;
+    background: var(--gray-100);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative; /* Important pour le menu déroulant */
+    border: 2px solid transparent;
+}
+
+.user-menu:hover {
+    background: var(--gray-200);
+    border-color: var(--primary-light);
+}
+
+.user-menu.active {
+    background: white;
+    border-color: var(--primary);
+    box-shadow: var(--shadow-md);
+}
+
+.user-avatar {
+    font-size: 2rem;
+    color: var(--primary);
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-name {
+    font-weight: 600;
+    color: var(--dark);
+}
+
+.user-role {
+    font-size: 0.85rem;
+    color: var(--gray-700);
+}
+
+.user-menu i.fa-chevron-down {
+    transition: transform 0.3s ease;
+    color: var(--primary);
+}
+
+.user-menu.active i.fa-chevron-down {
+    transform: rotate(180deg);
+}
+
+/* Menu déroulant */
+.user-dropdown {
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+    width: 220px;
+    background: white;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-xl);
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    border: 1px solid var(--gray-200);
+    overflow: hidden;
+}
+
+.user-dropdown.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.user-dropdown-header {
+    padding: 1.25rem;
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    color: white;
+    text-align: center;
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.user-dropdown-header .user-avatar-large {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.user-dropdown-header h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+}
+
+.user-dropdown-header p {
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+
+.user-dropdown-menu {
+    list-style: none;
+    padding: 0.5rem 0;
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.875rem 1.25rem;
+    color: var(--gray-700);
+    text-decoration: none;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    border-left: 3px solid transparent;
+}
+
+.dropdown-item:hover {
+    background: var(--gray-100);
+    color: var(--primary);
+    border-left-color: var(--primary);
+    padding-left: 1.5rem;
+}
+
+.dropdown-item i {
+    width: 20px;
+    text-align: center;
+    color: var(--primary);
+    font-size: 1.1rem;
+}
+
+.dropdown-divider {
+    height: 1px;
+    background: var(--gray-200);
+    margin: 0.5rem 1.25rem;
+}
+
+.dropdown-item.logout {
+    color: var(--danger);
+}
+
+.dropdown-item.logout:hover {
+    background: #FEE2E2;
+    color: var(--danger);
+}
+
+.dropdown-item.logout i {
+    color: var(--danger);
+}
+
+/* Badge pour les points */
+.points-badge {
+    margin-left: auto;
+    background: var(--primary);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+/* ===== AMÉLIORATIONS DESIGN ROUGE ===== */
+
+/* Logo icon */
+.logo-icon {
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+}
+
+/* Boutons principaux */
+.search-btn,
+.contact-agent-btn,
+.schedule-btn,
+.view-btn,
+.view-annonce-btn {
+    background: var(--primary);
+}
+
+.search-btn:hover,
+.contact-agent-btn:hover,
+.schedule-btn:hover,
+.view-btn:hover,
+.view-annonce-btn:hover {
+    background: var(--primary-light);
+}
+
+/* Bouton de recherche dans hero */
+.search-btn {
+    background: var(--primary);
+}
+
+.search-btn:hover {
+    background: var(--primary-dark);
+}
+
+/* Onglets de recherche */
+.search-tab.active {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+.search-tab:hover:not(.active) {
+    border-color: var(--primary-light);
+}
+
+/* Bouton réinitialiser */
+.reset-btn:hover {
+    background: var(--gray-200);
+    color: var(--primary);
+}
+
+/* Bouton newsletter */
+.newsletter-btn {
+    background: var(--primary);
+}
+
+.newsletter-btn:hover {
+    background: var(--primary-dark);
+}
+
+/* Liens sociaux */
+.social-link:hover {
+    background: var(--primary);
+}
+
+/* Prix dans les cartes */
+.annonce-price {
+    color: var(--primary); /* Rouge pour les prix */
+}
+
+/* Badges featured */
+.featured-badge {
+    background: rgba(185, 28, 28, 0.95); /* Rouge */
+    color: white;
+}
+
+/* Icones dans les features */
+.feature-item i {
+    color: var(--primary);
+}
+
+/* Cartes d'annonces au survol */
+.annonce-card:hover {
+    box-shadow: 0 10px 30px rgba(185, 28, 28, 0.15); /* Ombre rouge */
+}
+
+/* Décorations */
+.highlight {
+    color: var(--primary);
+}
+
+.accent {
+    color: var(--primary);
+}
+
+/* Footer */
+.footer-bottom a {
+    color: var(--primary-light);
+}
+
+.footer-bottom a:hover {
+    color: white;
+}
+
+/* ===== RESPONSIVE MENU ===== */
+@media (max-width: 768px) {
+    .user-info {
+        display: none;
+    }
+    
+    .user-menu {
+        padding: 0.5rem;
+    }
+    
+    .user-dropdown {
+        width: 200px;
+        right: -10px;
+    }
+}
+
+/* Badges et statuts - AJOUT */
+.annonce-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: rgba(185, 28, 28, 0.95); /* CHANGEMENT: Rouge */
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-md);
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: white; /* CHANGEMENT: Texte blanc */
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    backdrop-filter: blur(10px);
+}
+
+/* Statuts des annonces */
+.statut-louer {
+    background: linear-gradient(135deg, #FEE2E2, #FECACA); /* CHANGEMENT: Rouge clair */
+    color: #7F1D1D; /* CHANGEMENT: Rouge foncé */
+}
+
+.statut-vendre {
+    background: linear-gradient(135deg, #FEF3C7, #FDE68A); /* CHANGEMENT: Jaune/orange */
+    color: #92400E; /* CHANGEMENT: Orange foncé */
 }
 
 /* ===== SEARCH PANEL ===== */

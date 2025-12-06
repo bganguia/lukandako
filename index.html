@@ -10,35 +10,72 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
+
     <!-- Navigation Premium -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 1rem;">
-                    <div class="logo-icon">
-                        <i class="fas fa-building-columns"></i>
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">
+            <a href="index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 1rem;">
+                <div class="logo-icon" style="background: linear-gradient(135deg, var(--primary), var(--primary-dark));">
+                    <i class="fas fa-building-columns"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>LukaNdako</h1>
+                    <p class="logo-subtitle">L'excellence immobilière</p>
+                </div>
+            </a>
+        </div>
+        
+        <div class="nav-actions">
+            <div class="user-menu" id="userMenu">
+                <div class="user-avatar">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <div class="user-info">
+                    <span class="user-name">Jean Dupont</span>
+                    <span class="user-role">Client Privilège</span>
+                </div>
+                <i class="fas fa-chevron-down"></i>
+                
+                <!-- Menu déroulant -->
+                <div class="user-dropdown" id="userDropdown">
+                    <div class="user-dropdown-header">
+                        <div class="user-avatar-large">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <h4>Jean Dupont</h4>
+                        <p>Client Privilège</p>
                     </div>
-                    <div class="logo-text">
-                        <h1>LukaNdako</h1>
-                        <p class="logo-subtitle">L'excellence immobilière</p>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="nav-actions">
-                <div class="user-menu">
-                    <div class="user-avatar">
-                        <i class="fas fa-user-circle"></i>
-                    </div>
-                    <div class="user-info">
-                        <span class="user-name">Mon Espace</span>
-                        <span class="user-role">Client Privilège</span>
-                    </div>
-                    <i class="fas fa-chevron-down"></i>
+                    
+                    <ul class="user-dropdown-menu">
+                        <li>
+                            <a href="#" class="dropdown-item" id="mySpace">
+                                <i class="fas fa-user"></i>
+                                <span>Mon espace</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-item" id="buyPoints">
+                                <i class="fas fa-coins"></i>
+                                <span>Achat points</span>
+                                <span class="points-badge">150 pts</span>
+                            </a>
+                        </li>
+                        
+                        <div class="dropdown-divider"></div>
+                        
+                        <li>
+                            <a href="#" class="dropdown-item logout" id="logout">
+                                <i class="fas fa-sign-out-alt"></i>
+                                <span>Déconnexion</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </nav>
+    </div>
+</nav>
 
     <!-- Hero Section -->
     <section class="hero-section">
