@@ -78,37 +78,63 @@ $(document).ready(function() {
     }
 
     // Configuration des écouteurs d'événements
-    function setupEventListeners() {
-        // Recherche en temps réel avec debounce
-        let searchTimeout;
-        $('#searchInput').on('input', function() {
-            clearTimeout(searchTimeout);
-            searchTimeout = setTimeout(applyFilters, 300);
-        });
 
-        // Filtres
-        $('#villeFilter, #quartierFilter, #typeFilter, #chambresFilter, #sortSelect').change(applyFilters);
+function setupEventListeners() {
+    // Recherche en temps réel avec debounce
+    let searchTimeout;
+    $('#searchInput').on('input', function() {
+        clearTimeout(searchTimeout);
+        searchTimeout = setTimeout(applyFilters, 300);
+    });
+
+    // Filtres principaux
+    $('#villeFilter, #quartierFilter, #typeFilter, #chambresFilter, #sortSelect').change(applyFilters);
+    
+    // Filtres de plage avec debounce
+    let rangeTimeout;
+    $('#prixMin, #prixMax, #surfaceMin, #surfaceMax').on('input', function() {
+        clearTimeout(rangeTimeout);
+        rangeTimeout = setTimeout(applyFilters, 500);
+    });
+
+    // Bouton de recherche principale
+    $('.search-btn').click(applyFilters);
+
+    // Réinitialisation des filtres
+    $('#resetFilters').click(function() {
+        resetFilters();
+    });
+
+    // Gestion du bouton "Plus de filtres"
+    $('.more-filters-btn').click(function(e) {
+        e.preventDefault();
+        e.stopPropagation();
         
-        // Filtres de plage avec debounce
-        let rangeTimeout;
-        $('#prixMin, #prixMax, #surfaceMin, #surfaceMax').on('input', function() {
-            clearTimeout(rangeTimeout);
-            rangeTimeout = setTimeout(applyFilters, 500);
-        });
+        const filters = $('.search-filters');
+        const icon = $(this).find('i');
+        const button = $(this);
+        
+        if (filters.is(':visible')) {
+            // Fermer les filtres
+            filters.slideUp(300, function() {
+                button.removeClass('active');
+            });
+            icon.removeClass('fa-chevron-up').addClass('fa-chevron-down');
+        } else {
+            // Ouvrir les filtres
+            filters.slideDown(300, function() {
+                button.addClass('active');
+            });
+            icon.removeClass('fa-chevron-down').addClass('fa-chevron-up');
+        }
+    });
 
-        // Bouton de recherche
-        $('.search-btn').click(applyFilters);
-
-        // Réinitialisation
-        $('#resetFilters').click(function() {
-            resetFilters();
-        });
-
-        // Plus de filtres
-        $('.more-filters-btn').click(function() {
-            $('.search-filters').slideToggle(300);
-        });
-    }
+    // Boutons "Voir détails" des cartes featured
+    $(document).on('click', '.view-btn', function() {
+        const annonceId = $(this).data('id');
+        window.location.href = `annonce.html?id=${annonceId}`;
+    });
+}
 
     // Application des filtres
     function applyFilters() {
@@ -591,72 +617,78 @@ $(document).ready(function() {
     }
 
     // Création d'une carte d'annonce (MISE À JOUR AVEC BOUTON)
-    // function createAnnonceCard(annonce) {
-    //     const statutClass = annonce.statut === 'louer' ? 'statut-louer' : 'statut-vendre';
-    //     const statutText = annonce.statut === 'louer' ? 'À louer' : 'À vendre';
-    //     const priceUnit = annonce.statut === 'louer' ? '/mois' : '';
-        
-    //     // Formater le prix
-    //     const formattedPrice = new Intl.NumberFormat('fr-FR').format(annonce.prix);
-        
-    //     // Générer des images d'exemple basées sur l'ID
-    //     const imageCount = Math.min((annonce.id % 5) + 2, 5); // 2-5 images
-    //     const mainImage = `https://picsum.photos/600/400?random=${annonce.id}&grayscale`;
-        
-    //     return `
-    //         <div class="annonce-card" data-id="${annonce.id}">
-    //             <div class="annonce-image">
-    //                 <img src="${mainImage}" alt="${annonce.titre}">
-    //                 <div class="annonce-badge">
-    //                     <i class="fas fa-star"></i> Premium
-    //                 </div>
-    //                 <div class="image-count">
-    //                     <i class="fas fa-camera"></i> ${imageCount}
-    //                 </div>
-    //             </div>
-    //             <div class="annonce-content">
-    //                 <div class="annonce-header">
-    //                     <h3 class="annonce-title">${annonce.titre}</h3>
-    //                     <div class="annonce-location">
-    //                         <i class="fas fa-map-marker-alt"></i>
-    //                         ${annonce.quartier}, ${annonce.ville}
-    //                     </div>
-    //                 </div>
-                    
-    //                 <p class="annonce-description">${annonce.description.substring(0, 150)}...</p>
-                    
-    //                 <div class="annonce-details">
-    //                     <div class="detail-item">
-    //                         <span class="detail-value">${annonce.chambres}</span>
-    //                         <span class="detail-label">Chambres</span>
-    //                     </div>
-    //                     <div class="detail-item">
-    //                         <span class="detail-value">${annonce.surface}</span>
-    //                         <span class="detail-label">m²</span>
-    //                     </div>
-    //                     <div class="detail-item">
-    //                         <span class="detail-value">${annonce.type}</span>
-    //                         <span class="detail-label">Type</span>
-    //                     </div>
-    //                 </div>
-                    
-    //                 <div class="annonce-footer">
-    //                     <div class="annonce-price">
-    //                         ${formattedPrice} $<span>${priceUnit}</span>
-    //                     </div>
-    //                     <div class="annonce-actions">
-    //                         <span class="annonce-statut ${statutClass}">
-    //                             ${statutText}
-    //                         </span>
-    //                         <button class="view-annonce-btn" data-id="${annonce.id}">
-    //                             <i class="fas fa-eye"></i> Voir
-    //                         </button>
-    //                     </div>
-    //                 </div>
-    //             </div>
-    //         </div>
-    //     `;
-    // }
+    function createAnnonceCard(annonce) {
+    const statutClass = annonce.statut === 'louer' ? 'statut-louer' : 'statut-vendre';
+    const statutText = annonce.statut === 'louer' ? 'À louer' : 'À vendre';
+    const priceUnit = annonce.statut === 'louer' ? '/mois' : '';
+    
+    // Formater le prix
+    const formattedPrice = new Intl.NumberFormat('fr-FR').format(annonce.prix);
+    
+    // Utiliser la première photo de annonces.json ou une image par défaut
+    const mainImage = annonce.photos && annonce.photos.length > 0 
+        ? annonce.photos[0] 
+        : 'https://via.placeholder.com/600x400/2A4365/FFFFFF?text=LukaNdako';
+    
+    // Compter le nombre de photos
+    const imageCount = annonce.photos ? annonce.photos.length : 0;
+    
+    return `
+        <div class="annonce-card" data-id="${annonce.id}">
+            <div class="annonce-image">
+                <img src="${mainImage}" alt="${annonce.titre}">
+                <div class="annonce-badge">
+                    <!--<i class="fas fa-star"></i>--> Premium
+                </div>
+                ${imageCount > 0 ? `
+                    <div class="image-count">
+                        <i class="fas fa-camera"></i> ${imageCount}
+                    </div>
+                ` : ''}
+            </div>
+            <div class="annonce-content">
+                <div class="annonce-header">
+                    <h3 class="annonce-title">${annonce.titre}</h3>
+                    <div class="annonce-location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        ${annonce.quartier}, ${annonce.ville}
+                    </div>
+                </div>
+                
+                <p class="annonce-description">${annonce.description.substring(0, 150)}...</p>
+                
+                <div class="annonce-details">
+                    <div class="detail-item">
+                        <span class="detail-value">${annonce.chambres}</span>
+                        <span class="detail-label">Chambres</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-value">${annonce.surface}</span>
+                        <span class="detail-label">m²</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-value">${annonce.type}</span>
+                        <span class="detail-label">Type</span>
+                    </div>
+                </div>
+                
+                <div class="annonce-footer">
+                    <div class="annonce-price">
+                        ${formattedPrice} F CFA<span>${priceUnit}</span>
+                    </div>
+                    <div class="annonce-actions">
+                        <span class="annonce-statut ${statutClass}">
+                            ${statutText}
+                        </span>
+                        <button class="view-annonce-btn" data-id="${annonce.id}">
+                            <i class="fas fa-eye"></i> Voir
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+}
 
     // Gestion du clic sur le bouton "Voir"
     $(document).on('click', '.view-annonce-btn', function(e) {
@@ -813,3 +845,28 @@ $(document).ready(function() {
         }
     `).appendTo('head');
 });
+
+
+// Dans la fonction init() ou setupEventListeners()
+function setupResponsiveBehavior() {
+    // Sur mobile, garder les filtres fermés par défaut
+    if ($(window).width() < 768) {
+        $('.search-filters').hide();
+    }
+    
+    // Ajuster sur redimensionnement
+    $(window).resize(function() {
+        if ($(window).width() >= 768) {
+            // Sur desktop, on pourrait laisser ouverts
+            // $('.search-filters').show();
+        }
+    });
+}
+
+// Appeler cette fonction dans init()
+function init() {
+    loadAnnonces();
+    setupEventListeners();
+    setupSearchTabs();
+    setupResponsiveBehavior();  // AJOUTER CETTE LIGNE
+}

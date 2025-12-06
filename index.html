@@ -50,12 +50,19 @@
             <!-- Recherche Avancée -->
             <div class="search-panel">
                 <div class="search-tabs">
+                    <!-- <button class="more-filters-btn">
+                                <i class="fas fa-chevron-down"></i>
+                    </button> -->
                     <button class="search-tab active" data-type="louer">
                         <i class="fas fa-key"></i> À louer
                     </button>
                     <button class="search-tab" data-type="vendre">
                         <i class="fas fa-tag"></i> À vendre
                     </button>
+                    <button class="search-tab" onclick="$('.search-filters').slideToggle(300);">
+                        <i class="fas fa-sliders-h"></i> Plus
+                    </button>
+
                 </div>
                 
                 <div class="search-main">
@@ -68,7 +75,8 @@
                     </button>
                 </div>
                 
-                <div class="search-filters">
+                <!-- Cherchez cette section et modifiez-la -->
+                <div class="search-filters" style="display: none;">  <!-- AJOUT: style="display: none;" -->
                     <div class="filter-row">
                         <div class="filter-group">
                             <label class="filter-label">
@@ -107,7 +115,7 @@
                         </div>
                     </div>
                     
-                    <div class="filter-row">
+                    <div class="filter-row" style="padding-right: 14px;">
                         <div class="filter-group">
                             <label class="filter-label">
                                 <i class="fas fa-bed"></i> Chambres
@@ -137,18 +145,10 @@
                             </label>
                             <div class="price-input-group">
                                 <input type="number" id="prixMax" placeholder="Illimité" class="price-input">
-                                <span class="price-unit">$</span>
+                                <span class="price-unit">FCFA</span>  <!-- CHANGEMENT: $ → FCFA -->
                             </div>
                         </div>
-                        
-                        <div class="filter-group">
-                            <label class="filter-label">
-                                <i class="fas fa-sliders-h"></i> Plus de filtres
-                            </label>
-                            <button class="more-filters-btn">
-                                <i class="fas fa-plus-circle"></i>
-                            </button>
-                        </div>
+                    
                     </div>
                 </div>
             </div>
