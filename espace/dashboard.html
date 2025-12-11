@@ -1,0 +1,1404 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LukaNdako | Mon Espace</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body class="dashboard-body">
+    <!-- Navigation Dashboard -->
+    <nav class="dashboard-nav">
+        <div class="container">
+            <div class="dashboard-nav-content">
+                <a href="../index.html" class="dashboard-logo">
+                    <i class="fas fa-building-columns"></i>
+                    <span>LukaNdako</span>
+                </a>
+                
+                <div class="dashboard-user">
+                    <div class="user-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="user-info">
+                        <span class="user-name">Jean Dupont</span>
+                        <span class="user-status">
+                            <i class="fas fa-circle"></i> En ligne
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="dashboard-sidebar">
+            <div class="sidebar-header">
+                <h3>Mon Espace</h3>
+                <p>Gestion de vos activités</p>
+            </div>
+            
+            <nav class="sidebar-menu">
+                <ul>
+                    <li>
+                        <a href="#dashboard" class="sidebar-item active" data-section="dashboard">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <span>Tableau de bord</span>
+                        </a>
+                    </li>
+                    
+                    <li class="menu-section">Annonces</li>
+                    <li>
+                        <a href="#publish" class="sidebar-item" data-section="publish">
+                            <i class="fas fa-plus-circle"></i>
+                            <span>Publier une annonce</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#my-ads" class="sidebar-item" data-section="my-ads">
+                            <i class="fas fa-list"></i>
+                            <span>Mes annonces</span>
+                            <span class="menu-badge">12</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#favorites" class="sidebar-item" data-section="favorites">
+                            <i class="fas fa-heart"></i>
+                            <span>Favoris</span>
+                            <span class="menu-badge">8</span>
+                        </a>
+                    </li>
+                    
+                    <li class="menu-section">Points & Transactions</li>
+                    <li>
+                        <a href="#points" class="sidebar-item" data-section="points">
+                            <i class="fas fa-coins"></i>
+                            <span>Mes points</span>
+                            <span class="menu-badge points">150</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#buy-points" class="sidebar-item" data-section="buy-points">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>Acheter des points</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#transactions" class="sidebar-item" data-section="transactions">
+                            <i class="fas fa-exchange-alt"></i>
+                            <span>Transactions</span>
+                        </a>
+                    </li>
+                    
+                    <li class="menu-section">Compte</li>
+                    <li>
+                        <a href="#profile" class="sidebar-item" data-section="profile">
+                            <i class="fas fa-user-cog"></i>
+                            <span>Profil</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#settings" class="sidebar-item" data-section="settings">
+                            <i class="fas fa-cog"></i>
+                            <span>Paramètres</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#notifications" class="sidebar-item" data-section="notifications">
+                            <i class="fas fa-bell"></i>
+                            <span>Notifications</span>
+                            <span class="menu-badge">3</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div class="sidebar-footer">
+                <a href="index.html" class="sidebar-footer-item">
+                    <i class="fas fa-home"></i>
+                    <span>Retour au site</span>
+                </a>
+                <a href="#" class="sidebar-footer-item logout">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Déconnexion</span>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="dashboard-content">
+            <!-- Loading State -->
+            <div class="loading-state" id="loadingState">
+                <div class="spinner">
+                    <i class="fas fa-circle-notch fa-spin"></i>
+                </div>
+                <p>Chargement du tableau de bord...</p>
+            </div>
+
+            <!-- Sections dynamiques -->
+            <div class="dashboard-sections">
+                <!-- Tableau de Bord -->
+                <section id="dashboardSection" class="dashboard-section active">
+                    <div class="section-header">
+                        <h1>Tableau de bord</h1>
+                        <p>Bienvenue dans votre espace de gestion</p>
+                    </div>
+
+                    <!-- Stats Cards -->
+                    <div class="stats-grid">
+                        <div class="stat-card primary">
+                            <div class="stat-icon">
+                                <i class="fas fa-coins"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3>Points disponibles</h3>
+                                <div class="stat-value">150</div>
+                                <p class="stat-change">+25 ce mois</p>
+                            </div>
+                            <a href="#buy-points" class="stat-action" data-section="buy-points">
+                                <i class="fas fa-plus"></i> Ajouter
+                            </a>
+                        </div>
+
+                        <div class="stat-card success">
+                            <div class="stat-icon">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3>Annonces actives</h3>
+                                <div class="stat-value">8</div>
+                                <p class="stat-change">2 en attente</p>
+                            </div>
+                            <a href="#my-ads" class="stat-action" data-section="my-ads">
+                                <i class="fas fa-eye"></i> Voir
+                            </a>
+                        </div>
+
+                        <div class="stat-card warning">
+                            <div class="stat-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3>Annonces expirées</h3>
+                                <div class="stat-value">4</div>
+                                <p class="stat-change">Renouveler bientôt</p>
+                            </div>
+                            <a href="#my-ads" class="stat-action" data-section="my-ads">
+                                <i class="fas fa-redo"></i> Renouveler
+                            </a>
+                        </div>
+
+                        <div class="stat-card danger">
+                            <div class="stat-icon">
+                                <i class="fas fa-eye-slash"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3>Annonces inactives</h3>
+                                <div class="stat-value">3</div>
+                                <p class="stat-change">Non publiées</p>
+                            </div>
+                            <a href="#my-ads" class="stat-action" data-section="my-ads">
+                                <i class="fas fa-edit"></i> Modifier
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Actions -->
+                    <div class="quick-actions">
+                        <h2>Actions rapides</h2>
+                        <div class="actions-grid">
+                            <a href="#publish" class="action-card" data-section="publish">
+                                <div class="action-icon">
+                                    <i class="fas fa-plus-circle"></i>
+                                </div>
+                                <h3>Publier une annonce</h3>
+                                <p>Créez une nouvelle annonce immobilière</p>
+                            </a>
+                            
+                            <a href="#buy-points" class="action-card" data-section="buy-points">
+                                <div class="action-icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </div>
+                                <h3>Acheter des points</h3>
+                                <p>Rechargez votre solde de points</p>
+                            </a>
+                            
+                            <a href="#profile" class="action-card" data-section="profile">
+                                <div class="action-icon">
+                                    <i class="fas fa-user-edit"></i>
+                                </div>
+                                <h3>Compléter mon profil</h3>
+                                <p>Améliorez votre profil utilisateur</p>
+                            </a>
+                            
+                            <a href="#my-ads" class="action-card" data-section="my-ads">
+                                <div class="action-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <h3>Voir mes statistiques</h3>
+                                <p>Consultez les performances de vos annonces</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Recent Activity -->
+                    <div class="recent-activity">
+                        <div class="activity-header">
+                            <h2>Activité récente</h2>
+                            <a href="#transactions" class="view-all" data-section="transactions">Voir tout</a>
+                        </div>
+                        <div class="activity-list">
+                            <div class="activity-item success">
+                                <div class="activity-icon">
+                                    <i class="fas fa-coins"></i>
+                                </div>
+                                <div class="activity-content">
+                                    <h4>Achat de 50 points</h4>
+                                    <p>Aujourd'hui à 14:30 • Points ajoutés avec succès</p>
+                                </div>
+                                <div class="activity-amount">+50 pts</div>
+                            </div>
+                            
+                            <div class="activity-item info">
+                                <div class="activity-icon">
+                                    <i class="fas fa-home"></i>
+                                </div>
+                                <div class="activity-content">
+                                    <h4>Annonce publiée</h4>
+                                    <p>Hier à 10:15 • Villa à Bacongo</p>
+                                </div>
+                                <div class="activity-amount">-20 pts</div>
+                            </div>
+                            
+                            <div class="activity-item warning">
+                                <div class="activity-icon">
+                                    <i class="fas fa-bell"></i>
+                                </div>
+                                <div class="activity-content">
+                                    <h4>Annonce expirée</h4>
+                                    <p>Il y a 2 jours • Studio à Poto-Poto</p>
+                                </div>
+                                <div class="activity-amount">Expirée</div>
+                            </div>
+                            
+                            <div class="activity-item primary">
+                                <div class="activity-icon">
+                                    <i class="fas fa-eye"></i>
+                                </div>
+                                <div class="activity-content">
+                                    <h4>Nouvelle visite</h4>
+                                    <p>Il y a 3 jours • 15 visites sur votre appartement</p>
+                                </div>
+                                <div class="activity-amount">15 vues</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Publier une Annonce -->
+                <section id="publishSection" class="dashboard-section">
+                    <div class="section-header">
+                        <h1>Publier une annonce</h1>
+                        <p>Créez une nouvelle annonce immobilière</p>
+                    </div>
+
+                    <div class="publish-form-container">
+                        <div class="form-steps">
+                            <div class="step active">
+                                <div class="step-number">1</div>
+                                <div class="step-info">
+                                    <h4>Informations de base</h4>
+                                    <p>Titre, description, type</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">2</div>
+                                <div class="step-info">
+                                    <h4>Caractéristiques</h4>
+                                    <p>Surface, chambres, prix</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">3</div>
+                                <div class="step-info">
+                                    <h4>Photos & Localisation</h4>
+                                    <p>Images et adresse</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">4</div>
+                                <div class="step-info">
+                                    <h4>Confirmation</h4>
+                                    <p>Vérification et publication</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <form id="publishForm" class="publish-form">
+                            <!-- Étape 1 -->
+                            <div class="form-step active" data-step="1">
+                                <div class="form-group">
+                                    <label for="adTitle">
+                                        <i class="fas fa-heading"></i> Titre de l'annonce
+                                    </label>
+                                    <input type="text" id="adTitle" placeholder="Ex: Belle villa avec piscine à Bacongo" required>
+                                    <div class="form-hint">Soyez descriptif et attrayant</div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="adDescription">
+                                        <i class="fas fa-align-left"></i> Description détaillée
+                                    </label>
+                                    <textarea id="adDescription" rows="4" placeholder="Décrivez votre propriété en détail..." required></textarea>
+                                    <div class="form-hint">Minimum 100 caractères</div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="adType">
+                                            <i class="fas fa-home"></i> Type de bien
+                                        </label>
+                                        <select id="adType" required>
+                                            <option value="">Sélectionnez un type</option>
+                                            <option value="Appartement">Appartement</option>
+                                            <option value="Maison">Maison</option>
+                                            <option value="Villa">Villa</option>
+                                            <option value="Studio">Studio</option>
+                                            <option value="Terrain">Terrain</option>
+                                            <option value="Commerce">Commerce</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="adStatus">
+                                            <i class="fas fa-tag"></i> Statut
+                                        </label>
+                                        <select id="adStatus" required>
+                                            <option value="louer">À louer</option>
+                                            <option value="vendre">À vendre</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Étape 2 -->
+                            <div class="form-step" data-step="2">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="adSurface">
+                                            <i class="fas fa-expand-arrows-alt"></i> Surface (m²)
+                                        </label>
+                                        <input type="number" id="adSurface" placeholder="Ex: 120" min="1" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="adRooms">
+                                            <i class="fas fa-bed"></i> Nombre de chambres
+                                        </label>
+                                        <input type="number" id="adRooms" placeholder="Ex: 3" min="0" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="adBathrooms">
+                                            <i class="fas fa-bath"></i> Salles de bain
+                                        </label>
+                                        <input type="number" id="adBathrooms" placeholder="Ex: 2" min="0" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="adParking">
+                                            <i class="fas fa-car"></i> Places de parking
+                                        </label>
+                                        <input type="number" id="adParking" placeholder="Ex: 1" min="0">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="adPrice">
+                                        <i class="fas fa-money-bill-wave"></i> Prix (FCFA)
+                                    </label>
+                                    <input type="number" id="adPrice" placeholder="Ex: 150000" min="0" required>
+                                    <div class="form-hint">
+                                        Coût de publication : <span class="price-cost">20 points</span>
+                                        <span class="points-remaining">(Il vous reste 150 points)</span>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>
+                                        <i class="fas fa-check-circle"></i> Équipements
+                                    </label>
+                                    <div class="checkbox-grid">
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="equipment" value="Climatisation">
+                                            <span>Climatisation</span>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="equipment" value="Piscine">
+                                            <span>Piscine</span>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="equipment" value="Jardin">
+                                            <span>Jardin</span>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="equipment" value="Garage">
+                                            <span>Garage</span>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="equipment" value="Ascenseur">
+                                            <span>Ascenseur</span>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="equipment" value="Sécurité">
+                                            <span>Sécurité</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Étape 3 -->
+                            <div class="form-step" data-step="3">
+                                <div class="form-group">
+                                    <label>
+                                        <i class="fas fa-images"></i> Photos de la propriété
+                                    </label>
+                                    <div class="image-upload">
+                                        <div class="upload-area" id="uploadArea">
+                                            <i class="fas fa-cloud-upload-alt"></i>
+                                            <p>Glissez-déposez vos images ici</p>
+                                            <span class="upload-hint">ou cliquez pour parcourir</span>
+                                            <input type="file" id="imageUpload" multiple accept="image/*" style="display: none;">
+                                        </div>
+                                        <div class="image-preview" id="imagePreview"></div>
+                                    </div>
+                                    <div class="form-hint">Maximum 10 images, 5MB par image</div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="adCity">
+                                            <i class="fas fa-city"></i> Ville
+                                        </label>
+                                        <select id="adCity" required>
+                                            <option value="">Sélectionnez une ville</option>
+                                            <option value="Brazzaville">Brazzaville</option>
+                                            <option value="Pointe-Noire">Pointe-Noire</option>
+                                            <option value="Dolisie">Dolisie</option>
+                                            <option value="Nkayi">Nkayi</option>
+                                            <option value="Owando">Owando</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="adDistrict">
+                                            <i class="fas fa-map-marker-alt"></i> Quartier
+                                        </label>
+                                        <input type="text" id="adDistrict" placeholder="Ex: Bacongo, Moungali..." required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="adAddress">
+                                        <i class="fas fa-map-pin"></i> Adresse complète
+                                    </label>
+                                    <input type="text" id="adAddress" placeholder="Rue, numéro, secteur...">
+                                </div>
+                            </div>
+
+                            <!-- Étape 4 -->
+                            <div class="form-step" data-step="4">
+                                <div class="confirmation-step">
+                                    <div class="confirmation-header">
+                                        <i class="fas fa-check-circle"></i>
+                                        <h3>Vérification avant publication</h3>
+                                        <p>Veuillez vérifier les informations de votre annonce</p>
+                                    </div>
+
+                                    <div class="confirmation-details">
+                                        <div class="detail-item">
+                                            <span class="detail-label">Titre :</span>
+                                            <span class="detail-value" id="confirmTitle"></span>
+                                        </div>
+                                        <div class="detail-item">
+                                            <span class="detail-label">Type :</span>
+                                            <span class="detail-value" id="confirmType"></span>
+                                        </div>
+                                        <div class="detail-item">
+                                            <span class="detail-label">Statut :</span>
+                                            <span class="detail-value" id="confirmStatus"></span>
+                                        </div>
+                                        <div class="detail-item">
+                                            <span class="detail-label">Surface :</span>
+                                            <span class="detail-value" id="confirmSurface"></span>
+                                        </div>
+                                        <div class="detail-item">
+                                            <span class="detail-label">Chambres :</span>
+                                            <span class="detail-value" id="confirmRooms"></span>
+                                        </div>
+                                        <div class="detail-item">
+                                            <span class="detail-label">Prix :</span>
+                                            <span class="detail-value" id="confirmPrice"></span>
+                                        </div>
+                                        <div class="detail-item">
+                                            <span class="detail-label">Localisation :</span>
+                                            <span class="detail-value" id="confirmLocation"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="confirmation-cost">
+                                        <div class="cost-item">
+                                            <span>Coût de publication :</span>
+                                            <span class="cost-value">20 points</span>
+                                        </div>
+                                        <div class="cost-item total">
+                                            <span>Votre solde après publication :</span>
+                                            <span class="cost-value">130 points</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="checkbox">
+                                            <input type="checkbox" id="confirmTerms" required>
+                                            <span>Je certifie que les informations sont exactes et que je dispose des droits nécessaires pour publier cette annonce.</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Navigation des étapes -->
+                            <div class="form-navigation">
+                                <button type="button" class="btn-secondary prev-step" style="display: none;">
+                                    <i class="fas fa-arrow-left"></i> Retour
+                                </button>
+                                <button type="button" class="btn-primary next-step">
+                                    Suivant <i class="fas fa-arrow-right"></i>
+                                </button>
+                                <button type="submit" class="btn-success submit-form" style="display: none;">
+                                    <i class="fas fa-paper-plane"></i> Publier l'annonce
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+
+                <!-- Mes Annonces -->
+                <section id="myAdsSection" class="dashboard-section">
+                    <div class="section-header">
+                        <h1>Mes annonces</h1>
+                        <p>Gérez toutes vos publications</p>
+                    </div>
+
+                    <div class="ads-filter">
+                        <div class="filter-tabs">
+                            <button class="filter-tab active" data-filter="all">Toutes (12)</button>
+                            <button class="filter-tab" data-filter="active">Actives (8)</button>
+                            <button class="filter-tab" data-filter="pending">En attente (2)</button>
+                            <button class="filter-tab" data-filter="expired">Expirées (4)</button>
+                            <button class="filter-tab" data-filter="inactive">Inactives (3)</button>
+                        </div>
+                        <div class="filter-search">
+                            <i class="fas fa-search"></i>
+                            <input type="text" placeholder="Rechercher une annonce...">
+                        </div>
+                    </div>
+
+                    <div class="ads-list" id="adsList">
+                        <!-- Annonces seront chargées ici -->
+                        <div class="loading-ads">
+                            <i class="fas fa-spinner fa-spin"></i>
+                            <p>Chargement de vos annonces...</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Mes Points -->
+                <section id="pointsSection" class="dashboard-section">
+                    <div class="section-header">
+                        <h1>Mes points</h1>
+                        <p>Gérez votre solde et vos transactions</p>
+                    </div>
+
+                    <div class="points-overview">
+                        <div class="points-card">
+                            <div class="points-balance">
+                                <div class="balance-label">Solde actuel</div>
+                                <div class="balance-amount">150</div>
+                                <div class="balance-unit">points</div>
+                                <div class="balance-change">+25 ce mois</div>
+                            </div>
+                            <div class="points-equivalent">
+                                <p>Équivalent à environ <strong>15,000 FCFA</strong></p>
+                                <small>1 point = 100 FCFA</small>
+                            </div>
+                        </div>
+
+                        <div class="points-actions">
+                            <a href="#buy-points" class="points-action primary" data-section="buy-points">
+                                <i class="fas fa-plus-circle"></i>
+                                <span>Acheter des points</span>
+                            </a>
+                            <a href="#transactions" class="points-action secondary" data-section="transactions">
+                                <i class="fas fa-history"></i>
+                                <span>Historique</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="points-packages">
+                        <h3>Forfaits disponibles</h3>
+                        <div class="packages-grid">
+                            <div class="package-card">
+                                <div class="package-header">
+                                    <h4>Basique</h4>
+                                    <div class="package-price">5,000 FCFA</div>
+                                </div>
+                                <div class="package-points">50 points</div>
+                                <ul class="package-features">
+                                    <li><i class="fas fa-check"></i> 2 annonces standards</li>
+                                    <li><i class="fas fa-check"></i> Durée : 30 jours</li>
+                                    <li><i class="fas fa-check"></i> Support standard</li>
+                                </ul>
+                                <button class="btn-outline select-package" data-points="50" data-price="5000">
+                                    <i class="fas fa-shopping-cart"></i> Sélectionner
+                                </button>
+                            </div>
+
+                            <div class="package-card popular">
+                                <div class="package-badge">Populaire</div>
+                                <div class="package-header">
+                                    <h4>Pro</h4>
+                                    <div class="package-price">15,000 FCFA</div>
+                                </div>
+                                <div class="package-points">150 points</div>
+                                <ul class="package-features">
+                                    <li><i class="fas fa-check"></i> 5 annonces mises en avant</li>
+                                    <li><i class="fas fa-check"></i> Durée : 60 jours</li>
+                                    <li><i class="fas fa-check"></i> Support prioritaire</li>
+                                    <li><i class="fas fa-check"></i> Statistiques avancées</li>
+                                </ul>
+                                <button class="btn-primary select-package" data-points="150" data-price="15000">
+                                    <i class="fas fa-shopping-cart"></i> Sélectionner
+                                </button>
+                            </div>
+
+                            <div class="package-card">
+                                <div class="package-header">
+                                    <h4>Premium</h4>
+                                    <div class="package-price">30,000 FCFA</div>
+                                </div>
+                                <div class="package-points">300 points</div>
+                                <ul class="package-features">
+                                    <li><i class="fas fa-check"></i> Annonces illimitées</li>
+                                    <li><i class="fas fa-check"></i> Durée : 90 jours</li>
+                                    <li><i class="fas fa-check"></i> Support 24/7</li>
+                                    <li><i class="fas fa-check"></i> Mise en avant permanente</li>
+                                    <li><i class="fas fa-check"></i> Analytics premium</li>
+                                </ul>
+                                <button class="btn-outline select-package" data-points="300" data-price="30000">
+                                    <i class="fas fa-shopping-cart"></i> Sélectionner
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Acheter des Points -->
+                <section id="buyPointsSection" class="dashboard-section">
+                    <div class="section-header">
+                        <h1>Acheter des points</h1>
+                        <p>Rechargez votre compte pour publier des annonces</p>
+                    </div>
+
+                    <div class="buy-points-container">
+                        <div class="buy-points-form">
+                            <div class="form-group">
+                                <label for="pointsAmount">
+                                    <i class="fas fa-coins"></i> Montant en points
+                                </label>
+                                <div class="points-input">
+                                    <input type="number" id="pointsAmount" placeholder="Ex: 100" min="10" max="1000" value="150">
+                                    <span class="points-label">points</span>
+                                </div>
+                                <div class="form-hint">Minimum 10 points, maximum 1000 points</div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="pointsValue">
+                                    <i class="fas fa-money-bill-wave"></i> Équivalent en FCFA
+                                </label>
+                                <div class="price-display">
+                                    <input type="text" id="pointsValue" value="15,000" readonly>
+                                    <span class="currency">FCFA</span>
+                                </div>
+                                <div class="form-hint">1 point = 100 FCFA</div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>
+                                    <i class="fas fa-credit-card"></i> Méthode de paiement
+                                </label>
+                                <div class="payment-methods">
+                                    <label class="payment-method active">
+                                        <input type="radio" name="paymentMethod" value="momo" checked>
+                                        <div class="method-content">
+                                            <i class="fas fa-mobile-alt"></i>
+                                            <div>
+                                                <h4>Mobile Money</h4>
+                                                <p>MTN, Airtel, Orange</p>
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <label class="payment-method">
+                                        <input type="radio" name="paymentMethod" value="card">
+                                        <div class="method-content">
+                                            <i class="fas fa-credit-card"></i>
+                                            <div>
+                                                <h4>Carte bancaire</h4>
+                                                <p>Visa, Mastercard</p>
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <label class="payment-method">
+                                        <input type="radio" name="paymentMethod" value="bank">
+                                        <div class="method-content">
+                                            <i class="fas fa-university"></i>
+                                            <div>
+                                                <h4>Virement bancaire</h4>
+                                                <p>Transfert bancaire</p>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phoneNumber">
+                                    <i class="fas fa-phone"></i> Numéro de téléphone
+                                </label>
+                                <input type="tel" id="phoneNumber" placeholder="+242 00 000 0000" required>
+                            </div>
+
+                            <div class="purchase-summary">
+                                <div class="summary-item">
+                                    <span>Points à acheter :</span>
+                                    <span class="summary-value">150 points</span>
+                                </div>
+                                <div class="summary-item">
+                                    <span>Montant total :</span>
+                                    <span class="summary-value">15,000 FCFA</span>
+                                </div>
+                                <div class="summary-item total">
+                                    <span>Votre nouveau solde :</span>
+                                    <span class="summary-value">300 points</span>
+                                </div>
+                            </div>
+
+                            <button type="button" class="btn-success purchase-btn">
+                                <i class="fas fa-lock"></i> Procéder au paiement
+                            </button>
+
+                            <p class="security-note">
+                                <i class="fas fa-shield-alt"></i>
+                                Paiement sécurisé SSL - Vos informations sont protégées
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Transactions -->
+                <section id="transactionsSection" class="dashboard-section">
+                    <div class="section-header">
+                        <h1>Transactions</h1>
+                        <p>Historique de toutes vos opérations</p>
+                    </div>
+
+                    <div class="transactions-filter">
+                        <div class="filter-group">
+                            <label>Période :</label>
+                            <select id="periodFilter">
+                                <option value="all">Toutes les périodes</option>
+                                <option value="today">Aujourd'hui</option>
+                                <option value="week">Cette semaine</option>
+                                <option value="month" selected>Ce mois</option>
+                                <option value="year">Cette année</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label>Type :</label>
+                            <select id="typeFilter">
+                                <option value="all">Tous les types</option>
+                                <option value="purchase">Achats de points</option>
+                                <option value="ad_cost">Coûts d'annonces</option>
+                                <option value="refund">Remboursements</option>
+                                <option value="bonus">Bonus</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="transactions-list">
+                        <div class="transactions-header">
+                            <div class="transactions-column">Date</div>
+                            <div class="transactions-column">Description</div>
+                            <div class="transactions-column">Type</div>
+                            <div class="transactions-column">Points</div>
+                            <div class="transactions-column">Statut</div>
+                        </div>
+
+                        <div class="transactions-items">
+                            <div class="transaction-item success">
+                                <div class="transaction-date">
+                                    <div class="date-day">15</div>
+                                    <div class="date-month">Jan</div>
+                                </div>
+                                <div class="transaction-description">
+                                    <h4>Achat de points</h4>
+                                    <p>Paiement Mobile Money - 150 points</p>
+                                </div>
+                                <div class="transaction-type">
+                                    <span class="type-badge purchase">Achat</span>
+                                </div>
+                                <div class="transaction-points positive">+150</div>
+                                <div class="transaction-status">
+                                    <span class="status-badge completed">Terminé</span>
+                                </div>
+                            </div>
+
+                            <div class="transaction-item danger">
+                                <div class="transaction-date">
+                                    <div class="date-day">10</div>
+                                    <div class="date-month">Jan</div>
+                                </div>
+                                <div class="transaction-description">
+                                    <h4>Publication annonce</h4>
+                                    <p>Villa à Bacongo - Mise en avant</p>
+                                </div>
+                                <div class="transaction-type">
+                                    <span class="type-badge cost">Coût annonce</span>
+                                </div>
+                                <div class="transaction-points negative">-50</div>
+                                <div class="transaction-status">
+                                    <span class="status-badge completed">Terminé</span>
+                                </div>
+                            </div>
+
+                            <div class="transaction-item warning">
+                                <div class="transaction-date">
+                                    <div class="date-day">05</div>
+                                    <div class="date-month">Jan</div>
+                                </div>
+                                <div class="transaction-description">
+                                    <h4>Bonus de bienvenue</h4>
+                                    <p>Bonus pour nouvelle inscription</p>
+                                </div>
+                                <div class="transaction-type">
+                                    <span class="type-badge bonus">Bonus</span>
+                                </div>
+                                <div class="transaction-points positive">+50</div>
+                                <div class="transaction-status">
+                                    <span class="status-badge completed">Terminé</span>
+                                </div>
+                            </div>
+
+                            <div class="transaction-item info">
+                                <div class="transaction-date">
+                                    <div class="date-day">28</div>
+                                    <div class="date-month">Déc</div>
+                                </div>
+                                <div class="transaction-description">
+                                    <h4>Publication annonce</h4>
+                                    <p>Appartement à Moungali</p>
+                                </div>
+                                <div class="transaction-type">
+                                    <span class="type-badge cost">Coût annonce</span>
+                                </div>
+                                <div class="transaction-points negative">-20</div>
+                                <div class="transaction-status">
+                                    <span class="status-badge completed">Terminé</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Profil -->
+                <section id="profileSection" class="dashboard-section">
+                    <div class="section-header">
+                        <h1>Mon profil</h1>
+                        <p>Gérez vos informations personnelles</p>
+                    </div>
+
+                    <div class="profile-container">
+                        <div class="profile-sidebar">
+                            <div class="profile-avatar">
+                                <div class="avatar-image">
+                                    <i class="fas fa-user-circle"></i>
+                                </div>
+                                <button class="avatar-upload">
+                                    <i class="fas fa-camera"></i>
+                                </button>
+                            </div>
+                            <h3>Jean Dupont</h3>
+                            <p class="profile-role">Client Privilège</p>
+                            <div class="profile-stats">
+                                <div class="profile-stat">
+                                    <span class="stat-label">Membre depuis</span>
+                                    <span class="stat-value">Jan 2024</span>
+                                </div>
+                                <div class="profile-stat">
+                                    <span class="stat-label">Annonces</span>
+                                    <span class="stat-value">12</span>
+                                </div>
+                                <div class="profile-stat">
+                                    <span class="stat-label">Points</span>
+                                    <span class="stat-value">150</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="profile-content">
+                            <form class="profile-form">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="profileFirstName">
+                                            <i class="fas fa-user"></i> Prénom
+                                        </label>
+                                        <input type="text" id="profileFirstName" value="Jean" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="profileLastName">
+                                            <i class="fas fa-user"></i> Nom
+                                        </label>
+                                        <input type="text" id="profileLastName" value="Dupont" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="profileEmail">
+                                        <i class="fas fa-envelope"></i> Email
+                                    </label>
+                                    <input type="email" id="profileEmail" value="jean.dupont@email.com" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="profilePhone">
+                                        <i class="fas fa-phone"></i> Téléphone
+                                    </label>
+                                    <input type="tel" id="profilePhone" value="+242 00 000 0000" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="profileAddress">
+                                        <i class="fas fa-map-marker-alt"></i> Adresse
+                                    </label>
+                                    <textarea id="profileAddress" rows="2">Brazzaville, Congo</textarea>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="profileCity">
+                                            <i class="fas fa-city"></i> Ville
+                                        </label>
+                                        <select id="profileCity">
+                                            <option value="Brazzaville" selected>Brazzaville</option>
+                                            <option value="Pointe-Noire">Pointe-Noire</option>
+                                            <option value="Dolisie">Dolisie</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="profileLanguage">
+                                            <i class="fas fa-language"></i> Langue
+                                        </label>
+                                        <select id="profileLanguage">
+                                            <option value="fr" selected>Français</option>
+                                            <option value="en">English</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-actions">
+                                    <button type="submit" class="btn-primary">
+                                        <i class="fas fa-save"></i> Enregistrer les modifications
+                                    </button>
+                                    <button type="button" class="btn-secondary">
+                                        Annuler
+                                    </button>
+                                </div>
+                            </form>
+
+                            <div class="profile-security">
+                                <h3>Sécurité du compte</h3>
+                                <div class="security-actions">
+                                    <a href="#" class="security-action">
+                                        <i class="fas fa-lock"></i>
+                                        <div>
+                                            <h4>Changer le mot de passe</h4>
+                                            <p>Mettez à jour votre mot de passe régulièrement</p>
+                                        </div>
+                                        <i class="fas fa-chevron-right"></i>
+                                    </a>
+                                    <a href="#" class="security-action">
+                                        <i class="fas fa-shield-alt"></i>
+                                        <div>
+                                            <h4>Vérification en deux étapes</h4>
+                                            <p>Ajoutez une couche de sécurité supplémentaire</p>
+                                        </div>
+                                        <i class="fas fa-chevron-right"></i>
+                                    </a>
+                                    <a href="#" class="security-action">
+                                        <i class="fas fa-user-slash"></i>
+                                        <div>
+                                            <h4>Désactiver le compte</h4>
+                                            <p>Désactivez temporairement votre compte</p>
+                                        </div>
+                                        <i class="fas fa-chevron-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Paramètres -->
+                <section id="settingsSection" class="dashboard-section">
+                    <div class="section-header">
+                        <h1>Paramètres</h1>
+                        <p>Personnalisez votre expérience</p>
+                    </div>
+
+                    <div class="settings-container">
+                        <div class="settings-tabs">
+                            <button class="settings-tab active" data-tab="general">
+                                <i class="fas fa-cog"></i> Général
+                            </button>
+                            <button class="settings-tab" data-tab="notifications">
+                                <i class="fas fa-bell"></i> Notifications
+                            </button>
+                            <button class="settings-tab" data-tab="privacy">
+                                <i class="fas fa-shield-alt"></i> Confidentialité
+                            </button>
+                        </div>
+
+                        <div class="settings-content">
+                            <!-- Onglet Général -->
+                            <div class="settings-tab-content active" id="generalTab">
+                                <div class="settings-group">
+                                    <h3>Préférences du compte</h3>
+                                    <div class="settings-item">
+                                        <div class="settings-info">
+                                            <h4>Thème de l'interface</h4>
+                                            <p>Choisissez l'apparence de votre tableau de bord</p>
+                                        </div>
+                                        <select class="settings-control">
+                                            <option value="light">Clair</option>
+                                            <option value="dark" selected>Sombre</option>
+                                            <option value="auto">Auto (suivi système)</option>
+                                        </select>
+                                    </div>
+                                    <div class="settings-item">
+                                        <div class="settings-info">
+                                            <h4>Densité d'affichage</h4>
+                                            <p>Espacement des éléments dans l'interface</p>
+                                        </div>
+                                        <select class="settings-control">
+                                            <option value="compact">Compact</option>
+                                            <option value="normal" selected>Normal</option>
+                                            <option value="comfortable">Confortable</option>
+                                        </select>
+                                    </div>
+                                    <div class="settings-item">
+                                        <div class="settings-info">
+                                            <h4>Format de date</h4>
+                                            <p>Comment les dates sont affichées</p>
+                                        </div>
+                                        <select class="settings-control">
+                                            <option value="dd/mm/yyyy" selected>JJ/MM/AAAA</option>
+                                            <option value="mm/dd/yyyy">MM/JJ/AAAA</option>
+                                            <option value="yyyy-mm-dd">AAAA-MM-JJ</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="settings-group">
+                                    <h3>Annonces</h3>
+                                    <div class="settings-item">
+                                        <div class="settings-info">
+                                            <h4>Auto-renouvellement</h4>
+                                            <p>Renouveler automatiquement les annonces expirées</p>
+                                        </div>
+                                        <label class="switch">
+                                            <input type="checkbox" checked>
+                                            <span class="slider"></span>
+                                        </label>
+                                    </div>
+                                    <div class="settings-item">
+                                        <div class="settings-info">
+                                            <h4>Notifications de visite</h4>
+                                            <p>Recevoir des notifications pour les visites de vos annonces</p>
+                                        </div>
+                                        <label class="switch">
+                                            <input type="checkbox" checked>
+                                            <span class="slider"></span>
+                                        </label>
+                                    </div>
+                                    <div class="settings-item">
+                                        <div class="settings-info">
+                                            <h4>Limite d'annonces actives</h4>
+                                            <p>Nombre maximum d'annonces que vous pouvez avoir actives simultanément</p>
+                                        </div>
+                                        <select class="settings-control">
+                                            <option value="5">5 annonces</option>
+                                            <option value="10" selected>10 annonces</option>
+                                            <option value="15">15 annonces</option>
+                                            <option value="unlimited">Illimité</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Onglet Notifications -->
+                            <div class="settings-tab-content" id="notificationsTab">
+                                <div class="settings-group">
+                                    <h3>Préférences de notification</h3>
+                                    <div class="settings-item">
+                                        <div class="settings-info">
+                                            <h4>Notifications par email</h4>
+                                            <p>Recevoir les notifications importantes par email</p>
+                                        </div>
+                                        <label class="switch">
+                                            <input type="checkbox" checked>
+                                            <span class="slider"></span>
+                                        </label>
+                                    </div>
+                                    <div class="settings-item">
+                                        <div class="settings-info">
+                                            <h4>Notifications push</h4>
+                                            <p>Recevoir des notifications dans votre navigateur</p>
+                                        </div>
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider"></span>
+                                        </label>
+                                    </div>
+                                    <div class="settings-item">
+                                        <div class="settings-info">
+                                            <h4>Notifications SMS</h4>
+                                            <p>Recevoir des notifications importantes par SMS</p>
+                                        </div>
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider"></span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="settings-group">
+                                    <h3>Types de notifications</h3>
+                                    <div class="settings-item">
+                                        <div class="settings-info">
+                                            <h4>Nouvelles visites</h4>
+                                            <p>Quand quelqu'un consulte votre annonce</p>
+                                        </div>
+                                        <label class="switch">
+                                            <input type="checkbox" checked>
+                                            <span class="slider"></span>
+                                        </label>
+                                    </div>
+                                    <div class="settings-item">
+                                        <div class="settings-info">
+                                            <h4>Messages des acheteurs</h4>
+                                            <p>Quand vous recevez un nouveau message</p>
+                                        </div>
+                                        <label class="switch">
+                                            <input type="checkbox" checked>
+                                            <span class="slider"></span>
+                                        </label>
+                                    </div>
+                                    <div class="settings-item">
+                                        <div class="settings-info">
+                                            <h4>Expiration d'annonce</h4>
+                                            <p>Alerte avant l'expiration de vos annonces</p>
+                                        </div>
+                                        <label class="switch">
+                                            <input type="checkbox" checked>
+                                            <span class="slider"></span>
+                                        </label>
+                                    </div>
+                                    <div class="settings-item">
+                                        <div class="settings-info">
+                                            <h4>Promotions et offres</h4>
+                                            <p>Offres spéciales et réductions sur les points</p>
+                                        </div>
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Onglet Confidentialité -->
+                            <div class="settings-tab-content" id="privacyTab">
+                                <div class="settings-group">
+                                    <h3>Confidentialité du compte</h3>
+                                    <div class="settings-item">
+                                        <div class="settings-info">
+                                            <h4>Profil public</h4>
+                                            <p>Rendre votre profil visible pour les autres utilisateurs</p>
+                                        </div>
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider"></span>
+                                        </label>
+                                    </div>
+                                    <div class="settings-item">
+                                        <div class="settings-info">
+                                            <h4>Coordonnées visibles</h4>
+                                            <p>Afficher votre numéro de téléphone sur vos annonces</p>
+                                        </div>
+                                        <label class="switch">
+                                            <input type="checkbox" checked>
+                                            <span class="slider"></span>
+                                        </label>
+                                    </div>
+                                    <div class="settings-item">
+                                        <div class="settings-info">
+                                            <h4>Recherche dans l'annuaire</h4>
+                                            <p>Apparaître dans les résultats de recherche des utilisateurs</p>
+                                        </div>
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider"></span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="settings-group">
+                                    <h3>Données et confidentialité</h3>
+                                    <div class="settings-item">
+                                        <div class="settings-info">
+                                            <h4>Téléchargement des données</h4>
+                                            <p>Téléchargez une copie de toutes vos données</p>
+                                        </div>
+                                        <button class="btn-outline">
+                                            <i class="fas fa-download"></i> Télécharger
+                                        </button>
+                                    </div>
+                                    <div class="settings-item">
+                                        <div class="settings-info">
+                                            <h4>Suppression du compte</h4>
+                                            <p>Supprimez définitivement votre compte et toutes vos données</p>
+                                        </div>
+                                        <button class="btn-danger">
+                                            <i class="fas fa-trash"></i> Supprimer le compte
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Notifications -->
+                <section id="notificationsSection" class="dashboard-section">
+                    <div class="section-header">
+                        <h1>Notifications</h1>
+                        <p>Restez informé de toutes vos activités</p>
+                    </div>
+
+                    <div class="notifications-container">
+                        <div class="notifications-header">
+                            <div class="notifications-filter">
+                                <button class="filter-btn active">Toutes</button>
+                                <button class="filter-btn">Non lues</button>
+                                <button class="filter-btn">Importantes</button>
+                            </div>
+                            <button class="mark-all-read">
+                                <i class="fas fa-check-double"></i> Tout marquer comme lu
+                            </button>
+                        </div>
+
+                        <div class="notifications-list">
+                            <div class="notification-item unread">
+                                <div class="notification-icon">
+                                    <i class="fas fa-eye"></i>
+                                </div>
+                                <div class="notification-content">
+                                    <h4>Nouvelle visite sur votre annonce</h4>
+                                    <p>Votre villa à Bacongo a reçu 5 nouvelles visites aujourd'hui</p>
+                                    <span class="notification-time">Il y a 2 heures</span>
+                                </div>
+                                <div class="notification-actions">
+                                    <button class="action-btn" title="Marquer comme lu">
+                                        <i class="fas fa-check"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="notification-item unread important">
+                                <div class="notification-icon">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                </div>
+                                <div class="notification-content">
+                                    <h4>Annonce expirant bientôt</h4>
+                                    <p>Votre studio à Poto-Poto expire dans 3 jours. Renouvelez-le maintenant.</p>
+                                    <span class="notification-time">Il y a 1 jour</span>
+                                </div>
+                                <div class="notification-actions">
+                                    <button class="action-btn" title="Marquer comme lu">
+                                        <i class="fas fa-check"></i>
+                                    </button>
+                                    <button class="action-btn primary" title="Renouveler">
+                                        <i class="fas fa-redo"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="notification-item">
+                                <div class="notification-icon">
+                                    <i class="fas fa-coins"></i>
+                                </div>
+                                <div class="notification-content">
+                                    <h4>Points ajoutés avec succès</h4>
+                                    <p>Votre achat de 50 points a été traité. Nouveau solde : 150 points.</p>
+                                    <span class="notification-time">Il y a 2 jours</span>
+                                </div>
+                                <div class="notification-actions">
+                                    <button class="action-btn" title="Marquer comme lu">
+                                        <i class="fas fa-check"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="notification-item">
+                                <div class="notification-icon">
+                                    <i class="fas fa-comment"></i>
+                                </div>
+                                <div class="notification-content">
+                                    <h4>Nouveau message</h4>
+                                    <p>Vous avez reçu un nouveau message concernant votre appartement à Moungali</p>
+                                    <span class="notification-time">Il y a 3 jours</span>
+                                </div>
+                                <div class="notification-actions">
+                                    <button class="action-btn" title="Marquer comme lu">
+                                        <i class="fas fa-check"></i>
+                                    </button>
+                                    <button class="action-btn primary" title="Répondre">
+                                        <i class="fas fa-reply"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="dashboard.js"></script>
+</body>
+</html>
